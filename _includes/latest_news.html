@@ -1,0 +1,33 @@
+<!-- This is the column on the right -->
+{% assign today_date = "today" | date: "%Y-%m-%d" %}
+
+<h2>Workshops </h2>
+
+<ul class="post-list">
+    {% assign i = 0 %}
+    {% for post in site.posts reversed %}
+      {% if i > 4 %}
+        {% break %}
+      {% endif %}
+      {% if post.type == 'workshop_announcement' %}
+        {% assign workshop_start_date = post.start_date | date: "%Y-%m-%d" %}
+        {% if workshop_start_date > today_date %}
+          {% if post.registration contains "https://www.epay.ed.ac.uk" %}
+            {%- capture registration_link -%}
+              , Sign Up <a class="post-link" href="{{ post.registration }}" target="_blank"> HERE </a>
+            {%- endcapture -%}
+          {% else %}
+            {% assign registration_link = "" %}
+          {% endif %}
+          <li>
+              {{ post.when }}, <a class="post-link" href="{{ post.website }}" target="_blank">{{ post.title }}</a>{{registration_link}}
+          </li>
+          {% assign  i = i | plus:1 %}
+        {% endif %} 
+      {% endif %}
+    {% endfor %}
+</ul>
+<a class="post-link" href="workshops" target="_blank">See all workshops</a>
+
+<h2>Calendar </h2>
+<iframe src="https://calendar.google.com/calendar/embed?height=400&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FLondon&showTz=1&showCalendars=0&showTabs=0&showPrint=0&showDate=0&showNav=1&showTitle=0&src=c2tpczlhdWRudTExOWgydXNkMHRoNTFxazRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23795548" style="border-width:0" width="400" height="400" frameborder="0" scrolling="no"></iframe>
