@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-GB" }}">
+   
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> {{ page.title }} </title>
+   
+   	<!--link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png"-->
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="assets/images/favicon/site.webmanifest">
+	<link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<link id="favicon" rel="shortcut icon" href="{{'assets/images/favicon/favicon.png'}}" sizes="16x16 32x32 48x48" type="image/png" />
+	<meta name="msapplication-TileColor" content="#00aba9">
+	<meta name="msapplication-config" content="assets/images/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	
+   <!-- link rel="stylesheet" href="/css/style.css" media="all" -->
+	
+   <link rel="stylesheet" type="text/css" media="screen" href="{{ 'assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+	
+   <!-- Font Awesome -->
+	
+   <link rel="stylesheet" href="{{ 'assets/fonts/font-awesome/css/font-awesome.min.css' }}">
+	
+   <script src="https://kit.fontawesome.com/0771fcf7c9.js" crossorigin="anonymous"></script>
+	
+   <!-- Styles -->
+	
+   <style>
+      textcontent { /* was div{} */
+      padding: 10px 100px 10px 100px; /*top-right-bottom-left*/
+      /*text-align:justify;*/
+      width=60%;
+      }
+      center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      /*width: 50%;*/
+      max-width: 100%;
+      }
+   </style>
+</head>
+   
+<body>
+
+<!--BACKGROUND_instantiation-->
+
+#grid	
+
+<!-- HEADER -->
+	
+ 
+<font face = "arial">
+    <div id="header_wrap" class="outer">
+      <header class="inner-header">
+         <div class="container">
+		 <div class="header-tabs">
+            		<nav class="main-nav">
+		    
+			      <!-- <ul> -->
+				 <!-- <li> -->
+				
+					{% for item in site.data.pagelist.docs %}
+						<!--a class="header-tab" href="{{ item.url }}">{{ item.title }}</a-->
+							<div class="header-tab">
+								<span class="hover hover-3" onclick="window.location.href='{{ item.url }}';">{{ item.title }}</span>
+							</div>
+   					{% endfor %}
+				
+				  <!-- <a class="header-tab" href="{{ '/contact' | relative_url }}">Contact</a>
+				  <!-- a class="header-tab" href="/Ed_DaSH_website_prototyping">Home</a> -->
+				  <!-- a class="header-tab" href="/Ed_DaSH_website_prototyping/media.html">Publicity</a -->
+				  <!-- </li> -->
+				  <!--li><a href="/Ed_DaSH_website_prototyping">Home</a></li-->
+				  <!--li><a href="/Ed_DaSH_website_prototyping/media.html">Publicity</a></li-->
+				<!-- </ul> -->
+
+           		 </nav>
+			  
+		</div>
+		
+         </div>
+	      <div class="main-logo-align">
+	 	<a href="index.html">
+            		<!--img src="./images/Ed_DaSH_blue_circle.png" alt="Ed-DaSH blue circle logo" width="148px" height="148px"  /-->
+			<!--img src="./images/Ed_DaSH_blue_circle.png" alt="Ed-DaSH blue circle logo" /-->
+			<img src="images/Ed_DaSH_blue_circle.png" alt="Ed-DaSH blue circle logo" />
+			<!--img src="images/Ed_DaSH_blue_circle.png" alt="Ed-DaSH blue circle logo" /-->
+		</a>
+	      </div>
+      </header>
+   </div>
+    
+      
+      <!--span style="margin-left:50px; padding:10x, 20px, 20px, 50px; width=80%"-->
+      
+      
+     
+      	<!--center> {% include banner.html %} </center-->
+      	<div class="center">
+		<br>
+      		{% if page.show_heading %}
+			
+      			<!--h1><font color="#000066">{{ site.title }}</font></h1-->
+			<h3>{{ site.title }}</h3>
+			
+      		{% endif %}
+		<br><br><br><br>
+	 </div>
+      	
+	<!--{% if page.logo %}-->
+	      <!--center-->
+	      
+	<!--a href="https://edcarp.github.io/Ed_DaSH_website_prototyping/"-->
+            <!--img src="./images/Ed_DaSH_blue_circle.png" alt="Ed-DaSH blue circle logo" width="148px" height="148px" class="main-logo-align" /-->
+	<!--/a-->
+	      <!--/center-->
+	
+	      
+	<!--{% else %}-->
+      	<h3 class="pagetitle">{{ page.title }}</h3>
+	<br>
+	<!--{% endif %}-->
+  
+      	
+      <!-- MAIN CONTENT -->
+      
+      <div class="content">
+	{% if page.subtitle %}
+		<h3 class="pagetitle">{{ page.subtitle }}</h3>
+	{% endif %}
+	      <textcontent>
+         	    {{ content }}
+	      </textcontent>
+      </div>
+      
+	      
+      <!-- Added button brings the user back to the top of the page -->
+	      
+	      
+      <button onclick="topFunction()" id="myBtn" title="Go to top">&#8679;</button> 
+      
+      <!-- FOOTER  -->     
+      
+      <div id="footer_wrap" class="outer">
+         <footer>
+            <center>
+               <table style="width:100%">
+                  <tr>
+                     <th style="display: none; visibility: collapse;"></th>
+                     <th style="display: none; visibility: collapse;"></th>
+                  </tr>
+                  <tr>
+                     <td>{% include contact.html %}</td>
+                     <td>{% include footer.html %}</td>
+                  </tr>
+               </table>
+            </center>
+         </footer>
+      </div>
+      
+      <!--/span-->
+      
+   </font>
+	  
+<!-- Google analytics script -->
+	  
+{% if site.google_analytics %}
+<script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', '{{ site.google_analytics }}', 'auto');
+        ga('send', 'pageview');
+      </script>
+	  
+{% endif %}
+
+<script>  
+	
+//Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+} 
+</script>  
+	  
+<noscript> //This element will print the given message only when the execution of the  <script> tags does not take place.  
+	<p>Oops! This website requires a JavaScript-enabled browser.</p>  
+</noscript> 
+
+</body>
+</html>
