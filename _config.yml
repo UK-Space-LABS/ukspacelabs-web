@@ -1,0 +1,92 @@
+
+# Global site variables
+
+ title: "UK Space Life and Biomedical Sciences Association (UK Space LABS)"
+ description: > # this is for RSS feed
+    This is a brief description of the website.
+    This is another placeholder line.
+    
+    
+# Misc
+
+repository: https://github.com/UK-Space-LABS/ukspacelabs-website # https://github.com/edcarp/Ed_DaSH_website_prototyping
+
+# Author Settings
+author: UK-Space-LABS # add your name
+# author-img: Ed_DaSH_blue_circle.svg # add your photo
+about-author: UK Space Life and Biomedical Sciences Association # add description
+social-twitter: eddash_training # add your Twitter handle - this is now X
+social-facebook: # add your Facebook handle
+social-github: UK-Space-LABS # add your Github handle
+social-linkedin: 13616507 # add your Linkedin handle; https://www.linkedin.com/groups/13616507/
+social-email: "placeholder@org.com" # "contact@comp.org" # add your Email address - this should NOT be the website management email address
+
+# Other GH repos wanna link with this website (example below)
+
+# ws_unix_shell: https://github.com/swcarpentry/shell-novice 
+
+# Example for creating tabular contents
+
+# data_sci_workflows: [    # repo & lesson URLs are interim to try & test functionality
+#   {instance: "#1", tool: "Snakemake", date: "2021-10-01", repo: "https://github.com/carpentries-incubator/snakemake-novice-bioinformatics", lesson: "https://carpentries-incubator.github.io/snakemake-novice-bioinformatics", registration: ""}, # added temporary surrogate full `date` because of format
+#   {instance: "#2", tool: "Nextflow", date: "2021-11-01", repo: "https://github.com/carpentries-incubator/workflows-nextflow/", lesson: "https://carpentries-incubator.github.io/workflows-nextflow/", registration: ""},
+#   {instance: "#3", tool: "Snakemake", date: "2022-02-01", repo: "https://github.com/carpentries-incubator/snakemake-novice-bioinformatics", lesson: "https://carpentries-incubator.github.io/snakemake-novice-bioinformatics", registration: ""},
+#   {instance: "#4", tool: "Nextflow", date: "2022-03-01", repo: "https://github.com/carpentries-incubator/workflows-nextflow/", lesson: "https://carpentries-incubator.github.io/workflows-nextflow/", registration: ""},
+#   {instance: "#5", tool: "Snakemake", date: "2022-05-01", repo: "https://github.com/carpentries-incubator/snakemake-novice-bioinformatics", lesson: "https://carpentries-incubator.github.io/snakemake-novice-bioinformatics", registration: ""},
+#   {instance: "#6", tool: "Nextflow", date: "2022-06-01", repo: "https://github.com/carpentries-incubator/workflows-nextflow/", lesson: "https://carpentries-incubator.github.io/workflows-nextflow/", registration: ""},
+#   {instance: "#7", tool: "Snakemake", date: "2022-09-01", repo: "https://github.com/carpentries-incubator/snakemake-novice-bioinformatics", lesson: "https://carpentries-incubator.github.io/snakemake-novice-bioinformatics", registration: ""},
+#   {instance: "#8", tool: "Nextflow", date: "2022-10-01", repo: "https://github.com/carpentries-incubator/workflows-nextflow/", lesson: "https://carpentries-incubator.github.io/workflows-nextflow/", registration: ""},
+#   {instance: "#9", tool: "Snakemake", date: "2022-11-01", repo: "https://github.com/carpentries-incubator/snakemake-novice-bioinformatics", lesson: "https://carpentries-incubator.github.io/snakemake-novice-bioinformatics", registration: ""},
+#   {instance: "#10", tool: "Nextflow", date: "2023-01-01", repo: "https://github.com/carpentries-incubator/workflows-nextflow/", lesson: "https://carpentries-incubator.github.io/workflows-nextflow/", registration: ""},
+#   {instance: "#11", tool: "TBC", date: "", repo: "", lesson: "", registration: ""}
+# ]
+
+# Additional section (example below) e.g. group Committee members into activity or functional groups
+
+chair:  [
+    {name: "First_Name Last_Name", role: "Human Spaceflight Specialist", affiliate: "My primary organisation's name", social_handler: "@my_name"}
+]
+
+co-ordinators:  [
+    {name: "First_Name Last_Name", role: "Co-ordinator", affiliate: "My primary organisation's name", social_handler: "@my_name2"},
+    {name: "First_Name Last_Name", role: "Co-ordinator", affiliate: "My primary organisation's name", social_handler: "@my_name3"}
+]
+
+web_development:  [
+    {name: "Robert Nagy", role: "Website developer", affiliate: "IGC ECRC & ECTU - Edinburgh Health Economics Group", social_handler: "@robertn01"}
+]
+
+# Web navi:
+
+ baseurl: /UK-Space_LABS/ # the subpath of your site, e.g. /blog
+ url: https://edcarp.github.io/UK-Space_LABS/ # the base hostname & protocol for your site, e.g. http://example.com
+
+
+# Build settings
+
+markdown: kramdown # cmark-gfm # GFM # cmark-gfm # cmark
+theme: minima # Jekyll them is overwritten by HTML
+future: true
+show_downloads: false
+google_analytics:
+plugins:
+  - jekyll-feed
+  - jemoji
+# exclude:
+#  - Gemfile
+#  - Gemfile.lock
+
+# allow page redirection
+plugins:
+  # - jekyll-redirect-from
+  
+  # Where things are
+
+# collections:
+#    posts:
+#        output: true
+#        permalink: Ed-DaSH/:collection/:name # Ed_DaSH_website_prototyping/:collection/:name
+        
+# Turn on built-in syntax highlighting.
+
+highlighter: rouge
