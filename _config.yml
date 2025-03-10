@@ -15,7 +15,7 @@ repository: https://github.com/UK-Space-LABS/ukspacelabs-website # https://githu
 author: UK-Space-LABS # add your name
 # author-img: Ed_DaSH_blue_circle.svg # add your photo
 about-author: UK Space Life and Biomedical Sciences Association # add description
-social-twitter: eddash_training # add your Twitter handle - this is now X
+social-twitter: twitter_handle # add your Twitter handle - this is now X
 social-facebook: # add your Facebook handle
 social-github: UK-Space-LABS # add your Github handle
 social-linkedin: 13616507 # add your Linkedin handle; https://www.linkedin.com/groups/13616507/
@@ -53,7 +53,7 @@ co-ordinators:  [
 ]
 
 web_development:  [
-    {name: "Robert Nagy", role: "Website developer", affiliate: "IGC ECRC & ECTU - Edinburgh Health Economics Group", social_handler: "@robertn01"}
+    {name: "Robert Nagy", role: "Website developer", affiliate: "IGC & EPCC", social_handler: "@robertn01"}
 ]
 
 # Web navi:
