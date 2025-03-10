@@ -3,7 +3,7 @@
 layout: landing
 theme: Home
 title: UK-Space-LABS
-logo: ![UK-SPace-LABS logo](images/Space_Logo_col_dEC_14.jpg)
+logo: ![UK-Space-LABS logo](images/Space_Logo_col_dEC_14.jpg)
 
 
 partners:
@@ -13,6 +13,7 @@ partners:
 
 
 subtitle: The UK Space Life and Biomedical Sciences Association
+
 ---  
 
 # Overview
