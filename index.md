@@ -1,5 +1,4 @@
 ---
-
 layout: landing
 theme: Home
 title: UK-Space-LABS
@@ -13,7 +12,6 @@ partners:
 
 
 subtitle: The UK Space Life and Biomedical Sciences Association
-
 ---  
 
 # Overview
