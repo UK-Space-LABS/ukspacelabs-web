@@ -10,6 +10,7 @@ partners:
   logo_path: images/partner_sponsor_logos/resized/1200px-UKRI-Logo_Horiz-RGB_xs.jpeg
   ref_url: https://www.ukri.org
 subtitle: The UK Space Life and Biomedical Sciences Association
+
 ---
 
 
