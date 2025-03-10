@@ -58,8 +58,8 @@ web_development:  [
 
 # Web navi:
 
- baseurl: /UK-Space_LABS/ # the subpath of your site, e.g. /blog
- url: https://edcarp.github.io/UK-Space_LABS/ # the base hostname & protocol for your site, e.g. http://example.com
+ baseurl: /ukspacelabs-website/ # the subpath of your site, e.g. /blog
+ url: https://UK-Space-LABS.github.io/ukspacelabs-website/ # the base hostname & protocol for your site, e.g. http://example.com
 
 
 # Build settings
