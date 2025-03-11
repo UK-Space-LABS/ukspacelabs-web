@@ -1,5 +1,5 @@
 ---
-layout: {% if site.under_construction %}maintenance{% else %}landing{% endif %}
+layout: landing
 theme: Home
 title: UK-Space-LABS
 logo: ![UK-Space-LABS logo](images/Space_Logo_col_dEC_14.jpg)
@@ -12,7 +12,13 @@ partners:
 subtitle: Welcome - UK Space Life and Biomedical Sciences Association
 --- 
 
-
+{% if site.under_construction %}
+<div class="maintenance-page">
+  <h1>Under Construction</h1>
+  <p>This site is currently under development. Please check back soon!</p>
+</div>
+{% else %}
+<!-- Your regular content here -->
 
 # Overview
 
@@ -20,5 +26,5 @@ Below is a legacy filler text -- to be updated!
 
 Ed-DaSH is a **Da**ta **S**cience training programme for **H**ealth and Biosciences. The [team](ed_dash_team.html) has developed workshops using [The Carpentries][carpentries]{:target="_blank"} platform on the following topics. See [workshops](workshops.html) for dates and registration details. All workshops will be delivered remotely.
 
-
+{% endif %}
 
