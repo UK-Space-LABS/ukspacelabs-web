@@ -1,5 +1,5 @@
 ---
-layout: landing
+layout: {% if site.under_construction %}maintenance{% else %}landing{% endif %}
 theme: Home
 title: UK-Space-LABS
 logo: ![UK-Space-LABS logo](images/Space_Logo_col_dEC_14.jpg)
