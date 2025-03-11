@@ -12,6 +12,7 @@ partners:
 subtitle: Welcome - UK Space Life and Biomedical Sciences Association
 --- 
 
+<!-- under_construction parameter sat to 'true' in the _config.yaml -->
 {% if site.under_construction %}
 <div class="maintenance-page">
   <h1>Under Construction</h1>
