@@ -9,7 +9,7 @@ partners:
   logo_path: images/partner_sponsor_logos/resized/1200px-UKRI-Logo_Horiz-RGB_xs.jpeg
   ref_url: https://www.ukri.org
   
-subtitle: Welcome - UK Space Life and Biomedical Sciences Association
+subtitle: Welcome - The UK Space Life and Biomedical Sciences Association
 --- 
 
 <!-- under_construction parameter sat to 'true' in the _config.yaml -->
@@ -23,9 +23,7 @@ subtitle: Welcome - UK Space Life and Biomedical Sciences Association
 
 # Overview
 
-Below is a legacy filler text -- to be updated!
-
-Ed-DaSH is a **Da**ta **S**cience training programme for **H**ealth and Biosciences. The [team](ed_dash_team.html) has developed workshops using [The Carpentries][carpentries]{:target="_blank"} platform on the following topics. See [workshops](workshops.html) for dates and registration details. All workshops will be delivered remotely.
+The UK Space Life and Biomedical Sciences Association aids and supports UK communities interested in the fields of space life and biomedical sciences.
 
 {% endif %}
 
