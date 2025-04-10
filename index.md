@@ -11,7 +11,7 @@ subtitle: Welcome - The UK Space Life and Biomedical Sciences Association
 <!-- under_construction parameter sat to 'true' in the _config.yaml -->
 {% if site.under_construction %}
 <div class="maintenance-page">
-  !DOCTYPE html
+  <!--!DOCTYPE html-->
   <html lang="en">
   <head>
     <meta charset="UTF-8" />
