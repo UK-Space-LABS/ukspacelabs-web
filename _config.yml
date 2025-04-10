@@ -1,7 +1,7 @@
 
 # Global site variables
 
- title: "UK Space Life and Biomedical Sciences Association (UK Space LABS)"
+ title: "The UK Space Life and Biomedical Sciences Association (UK Space LABS)"
  under_construction: true
  description: > # this is for RSS feed
     This is a brief description of the website.
@@ -15,7 +15,7 @@ repository: https://github.com/UK-Space-LABS/ukspacelabs-website # https://githu
 # Author Settings
 author: UK-Space-LABS # add your name
 # author-img: Ed_DaSH_blue_circle.svg # add your photo
-about-author: UK Space Life and Biomedical Sciences Association # add description
+about-author: The UK Space Life and Biomedical Sciences Association # add description
 # social-twitter: twitter_handle # add your Twitter handle - this is now X
 # social-facebook: # add your Facebook handle
 social-github: UK-Space-LABS # add your Github handle
