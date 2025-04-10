@@ -28,7 +28,7 @@ subtitle: Welcome - The UK Space Life and Biomedical Sciences Association
         justify-content: center;
         align-items: center;
         height: 100vh;
-        background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+        background-image: url('images/earth_from_moon.png');
       }
       .container {
         text-align: center;
