@@ -5,6 +5,7 @@ title: UK-Space-LABS
 logo: ![UK-Space-LABS logo](images/Space_Logo_col_dEC_14.jpg)
 
 subtitle: Welcome - The UK Space Life and Biomedical Sciences Association
+
 --- 
 
 <!-- under_construction parameter sat to 'true' in the _config.yaml -->
