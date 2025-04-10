@@ -74,7 +74,7 @@ subtitle: Welcome - The UK Space Life and Biomedical Sciences Association
     <div class="comet"></div>
     <div class="container">
       <div class="astronaut">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Tardigrade_microanimal.png" alt="Space Tardigrade" />
+        <img src="images/space_tardigrade.png" alt="Space Tardigrade" />
       </div>
       <h1>Houston, We Have Maintenance...</h1>
       <p>Our spaceship is undergoing a quick tune-up. We'll be launching again shortly!</p>
