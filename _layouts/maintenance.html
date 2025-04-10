@@ -2,7 +2,71 @@
 layout: default
 ---
 <div class="maintenance-page">
-  <h1>Under Construction</h1>
+  <!-- <h1>Under Construction</h1>
   <p>This site is currently under development. Please check back soon!</p>
   <!-- Add any additional content you want -->
+ <!--  <!DOCTYPE html> -->
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Houston, We Have Maintenance</title>
+    <style>
+      body {
+        margin: 0;
+        background: #0b0c10;
+        color: #fff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+      }
+      .container {
+        text-align: center;
+        padding: 2rem;
+      }
+      .astronaut {
+        font-size: 6rem;
+        animation: float 3s ease-in-out infinite;
+      }
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-20px); }
+      }
+      h1 {
+        font-size: 2.5rem;
+        margin-top: 1rem;
+      }
+      p {
+        font-size: 1.2rem;
+        color: #aaa;
+      }
+      .comet {
+        position: absolute;
+        top: 20%;
+        left: -200px;
+        width: 100px;
+        height: 4px;
+        background: linear-gradient(90deg, #0ff, transparent);
+        animation: comet 6s linear infinite;
+      }
+      @keyframes comet {
+        0% { left: -200px; top: 20%; }
+        100% { left: 120%; top: 10%; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="comet"></div>
+    <div class="container">
+      <div class="astronaut">🥯</div>
+      <h1>Houston, We Have Maintenance...</h1>
+      <p>Our spaceship is undergoing a quick tune-up. We'll be launching again shortly!</p>
+      <p>In the meantime, don't forget to hydrate... even in zero gravity.</p>
+    </div>
+  </body>
+  </html>
 </div>
