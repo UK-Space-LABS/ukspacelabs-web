@@ -16,11 +16,11 @@ repository: https://github.com/UK-Space-LABS/ukspacelabs-website # https://githu
 author: UK-Space-LABS # add your name
 # author-img: Ed_DaSH_blue_circle.svg # add your photo
 about-author: UK Space Life and Biomedical Sciences Association # add description
-social-twitter: twitter_handle # add your Twitter handle - this is now X
-social-facebook: # add your Facebook handle
+# social-twitter: twitter_handle # add your Twitter handle - this is now X
+# social-facebook: # add your Facebook handle
 social-github: UK-Space-LABS # add your Github handle
 social-linkedin: 13616507 # add your Linkedin handle; https://www.linkedin.com/groups/13616507/
-social-email: "placeholder@org.com" # "contact@comp.org" # add your Email address - this should NOT be the website management email address
+social-email: "ukspacelabsengagement@gmail.com" # "contact@comp.org" # add your Email address - this should NOT be the website management email address
 
 # Other GH repos wanna link with this website (example below)
 
