@@ -4,7 +4,72 @@ title: "404: Page not found"
 permalink: 404.html
 ---
 
-<div class="page">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>404: Lost in Space</title>
+  <style>
+    body {
+      background-color: #0b0c10;
+      color: #c5c6c7;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      padding: 2rem;
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/2c/Space_background.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    h1 {
+      font-size: 4rem;
+      margin-top: 2rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      max-width: 600px;
+      margin: 1rem auto;
+    }
+
+    .astro {
+      font-size: 5rem;
+      animation: float 2s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #66fcf1;
+      color: #0b0c10;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    a:hover {
+      background-color: #45a29e;
+    }
+  </style>
+</head>
+<body>
+  <div class="astro">🧑‍🚀</div>
+  <h1>404: Lost in Space</h1>
+  <p>Oops! Our astronaut took a wrong turn at Mars and couldn't find the page you're looking for.</p>
+  <p>Don't worry, we've initiated a rescue mission. Meanwhile, let's head back to base.</p>
+  <a href="/">Return to Earth (Home)</a>
+</body>
+</html>
+
+<!-- <div class="page">
   <h1 class="page-title">404: Page not found</h1>
   <p class="lead">Sorry, we've misplaced that URL or it's pointing to something that doesn't exist. <a href="{{ site.baseurl }}/">Head back home</a> to try finding it again.</p>
-</div>
+</div> -->
