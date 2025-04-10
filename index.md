@@ -42,6 +42,11 @@ subtitle: Welcome - The UK Space Life and Biomedical Sciences Association
         0%, 100% { transform: translateY(0); }
         50% { transform: translateY(-20px); }
       }
+      .astronaut img {
+        width: 150px;
+        animation: float 3s ease-in-out infinite;
+        filter: drop-shadow(0 0 5px #0ff);
+      }
       h1 {
         font-size: 2.5rem;
         margin-top: 1rem;
@@ -68,7 +73,9 @@ subtitle: Welcome - The UK Space Life and Biomedical Sciences Association
   <body>
     <div class="comet"></div>
     <div class="container">
-      <div class="astronaut">🥯</div>
+      <div class="astronaut">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Tardigrade_microanimal.png" alt="Space Tardigrade" />
+      </div>
       <h1>Houston, We Have Maintenance...</h1>
       <p>Our spaceship is undergoing a quick tune-up. We'll be launching again shortly!</p>
       <p>In the meantime, don't forget to hydrate... even in zero gravity.</p>
