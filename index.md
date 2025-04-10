@@ -3,11 +3,6 @@ layout: landing
 theme: Home
 title: UK-Space-LABS
 logo: ![UK-Space-LABS logo](images/Space_Logo_col_dEC_14.jpg)
-
-partners:
-- name: UKRI
-  logo_path: images/partner_sponsor_logos/resized/1200px-UKRI-Logo_Horiz-RGB_xs.jpeg
-  ref_url: https://www.ukri.org
   
 subtitle: Welcome - The UK Space Life and Biomedical Sciences Association
 --- 
