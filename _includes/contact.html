@@ -1,47 +1,291 @@
-<!--font face = "arial"-->
-  <!--font color="#625D5D"-->
-
-        <section class="contact">
-          <h3 class="contact-title">Contact us</h3><br>
-          <ul>
-            <!-- {% if site.social-twitter %}
-              <li><a href="https://twitter.com/{{ site.social-twitter }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+<section class="contact space-contact">
+    <h3 class="contact-title"><i class="fa fa-rocket" aria-hidden="true"></i> Contact us</h3>
+    <br>
+    
+    <div class="contact-grid">
+        <div class="contact-item">
+            <div class="contact-icon">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+            </div>
+            <h4>Email</h4>
+            <p>For collaboration, partnerships, and general inquiries:</p>
+            {% if site.social-email %}
+                <a href="mailto:{{ site.social-email }}" class="contact-link">
+                    {{ site.social-email }}
+                </a>
             {% else %}
-              <li><a href="https://twitter.com/eddash_training/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <a href="mailto:ukspacelabsengagement@gmail.com" class="contact-link">
+                    ukspacelabsengagement@gmail.com
+                </a>
             {% endif %}
-            
-            {% if site.social-facebook %}
-              <li><a href="https://facebook.com/{{ site.social-facebook }}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        </div>
+        
+        <div class="contact-item">
+            <div class="contact-icon">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </div>
+            <h4>LinkedIn Group</h4>
+            <p>Join our professional community:</p>
+            {% if site.social-linkedin %}
+                <a href="https://www.linkedin.com/groups/{{ site.social-linkedin }}/" target="_blank" class="contact-link">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i> UK Space LABS Group
+                </a>
             {% else %}
-              <li><a href="https://facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-            {% endif %} -->
-            
+                <a href="https://www.linkedin.com/groups/13616507/" target="_blank" class="contact-link">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i> UK Space LABS Group
+                </a>
+            {% endif %}
+        </div>
+        
+        <div class="contact-item">
+            <div class="contact-icon">
+                <i class="fa fa-github" aria-hidden="true"></i>
+            </div>
+            <h4>GitHub</h4>
+            <p>Follow our open-source projects:</p>
             {% if site.social-github %}
-              <li class="github"><a href="http://github.com/{{site.social-github}}" target="_blank"><i class="fa fa-github"></i></a></li>
+                <a href="https://github.com/{{ site.social-github }}" target="_blank" class="contact-link">
+                    <i class="fa fa-github" aria-hidden="true"></i> @{{ site.social-github }}
+                </a>
             {% else %}
-              <li class="github"><a href="https://github.com/UK-Space-LABS/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                <a href="https://github.com/UK-Space-LABS/" target="_blank" class="contact-link">
+                    <i class="fa fa-github" aria-hidden="true"></i> @UK-Space-LABS
+                </a>
+            {% endif %}
+        </div>
+    </div>
+    
+    <div class="contact-social-list">
+        <ul>
+            {% if site.social-github %}
+                <li class="github">
+                    <a href="https://github.com/{{ site.social-github }}" target="_blank">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </li>
+            {% else %}
+                <li class="github">
+                    <a href="https://github.com/UK-Space-LABS/" target="_blank">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                </li>
             {% endif %}
             
             {% if site.social-linkedin %}
-              <li class="linkedin"><a href="https://www.linkedin.com/{{site.social-linkedin}}" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                <li class="linkedin">
+                    <a href="https://www.linkedin.com/groups/{{ site.social-linkedin }}/" target="_blank">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </li>
             {% else %}
-              <li class="linkedin"><a href="https://www.linkedin.com/groups/13616507/ " target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li class="linkedin">
+                    <a href="https://www.linkedin.com/groups/13616507/" target="_blank">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </li>
             {% endif %}
             
             {% if site.social-email %}
-              <li class="email"><a href="mailto:{{site.social-email}}"><i class="fa fa-envelope-o"></i></a></li>
+                <li class="email">
+                    <a href="mailto:{{ site.social-email }}">
+                        <i class="fa fa-envelope-o"></i>
+                    </a>
+                </li>
             {% else %}
-              <li class="email"><a href="mailto:ukspacelabsengagement@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+                <li class="email">
+                    <a href="mailto:ukspacelabsengagement@gmail.com">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    </a>
+                </li>
             {% endif %}
-            
-          </ul><br>
-        </section> <!-- End Section Contact -->
-        <div class="center-footer">
-          <span class="copyright">&copy; </span>
-            {{ site.time | date: '%Y' }}
-            <a href="https://uk-space-labs.github.io/ukspacelabs-website" target=“_blank”>The UK Space Life and Biomedical Sciences Association</a>
-     
-        </div>
+        </ul>
+    </div>
     
-     <!--/font-->
-<!--/font-->
+    <br>
+    
+    <div class="center-footer contact-footer">
+        <span class="copyright">&copy; </span>
+        {{ site.time | date: '%Y' }}
+        <a href="{{ site.url }}" target="_blank">{{ site.title }}</a>
+    </div>
+</section> }}
+                    </a>
+                {% else %}
+                    <a href="mailto:contact@ukspacelabs.org" class="contact-link">
+                        contact@ukspacelabs.org
+                    </a>
+                {% endif %}
+            </div>
+            
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                </div>
+                <h3>Join Our Community</h3>
+                <p>Connect with fellow space biomedicine enthusiasts and stay updated on the latest developments.</p>
+                <div class="social-links">
+                    {% if site.social-twitter %}
+                        <a href="https://twitter.com/{{ site.social-twitter }}" target="_blank" class="social-link">
+                            <i class="fa fa-twitter" aria-hidden="true"></i> Follow us
+                        </a>
+                    {% endif %}
+                    {% if site.social-linkedin %}
+                        <a href="https://linkedin.com/company/{{ site.social-linkedin }}" target="_blank" class="social-link">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i> Connect
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+            
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                </div>
+                <h3>Educational Opportunities</h3>
+                <p>Learn about training programs, workshops, and career development in space biomedicine.</p>
+                <a href="#training" class="contact-link">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i> Explore Programs
+                </a>
+            </div>
+        </div>
+        
+        <div class="contact-cta">
+            <h3>🚀 Ready to Reach for the Stars?</h3>
+            <p>Whether you're looking to advance your career in space biomedicine, collaborate on groundbreaking research, or simply learn more about our mission, UK Space LABS is here to support your journey to the cosmos.</p>
+        </div>
+    </div>
+</section>
+
+<style>
+.contact-section {
+    margin-top: 3rem;
+}
+
+.contact-content {
+    text-align: center;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.contact-item {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(74, 158, 255, 0.2);
+}
+
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg, #4a9eff, #00d4ff);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.contact-item h3 {
+    color: #4a9eff;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.contact-item p {
+    color: #e6f3ff;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.contact-link {
+    color: #00d4ff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    border-radius: 25px;
+    margin-top: 0.5rem;
+}
+
+.contact-link:hover {
+    color: #ffffff;
+    background: rgba(0, 212, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 212, 255, 0.3);
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    color: #4a9eff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(74, 158, 255, 0.3);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.social-link:hover {
+    background: rgba(74, 158, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.contact-cta {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: rgba(74, 158, 255, 0.1);
+    border-radius: 15px;
+    border: 1px solid rgba(74, 158, 255, 0.3);
+}
+
+.contact-cta h3 {
+    color: #4a9eff;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.contact-cta p {
+    color: #e6f3ff;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .contact-item {
+        padding: 1.5rem;
+    }
+    
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+</style>
