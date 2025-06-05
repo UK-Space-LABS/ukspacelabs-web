@@ -1,23 +1,27 @@
 ---
-layout: default
+layout: main_page
 ---  
 
-<div id="main_content_wrap" class="outer">
+<div id="main_content_wrap" class="content-wrapper">
     <div class="inner flex-wrapper">
-        <section id="main_content">
+        <section id="main_content" class="main-section">
             {{ content }}
-      
         </section>
        
-	<section id="posts">
+        <section id="posts" class="posts-section">
             {% include latest_news.html %}
         </section>
-	
     </div>
+    
+    {% if page.partners %}
     <div class="logo-grid">
-   	{% for partner in page.partners %}
-    		<a class="logo-grid-item" href="{{ partner.ref_url }}"><img class="partner-logo" src="{{ partner.logo_path }}"/></a>
-  	{% endfor %}
+        {% for partner in page.partners %}
+        <a class="logo-grid-item" href="{{ partner.ref_url }}" target="_blank" title="{{ partner.name }}">
+            <img class="partner-logo" src="{{ partner.logo_path | relative_url }}" alt="{{ partner.name }}"/>
+        </a>
+        {% endfor %}
     </div>
+    {% endif %}
+    
     <br>
 </div>
