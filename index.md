@@ -18,7 +18,7 @@ partners:
 - name: Blue Abyss
   logo_path: images/partner_logos/blue_abyss_logo.png
   ref_url: https://www.blueabyss.uk/
---- 
+---
 
 <!-- under_construction parameter set to 'true' in the _config.yaml -->
 {% if site.under_construction %}
