@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-GB" }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ 'assets/images/favicon/Space_LABS_black2_32x32.ico' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="48x48" href="{{ 'assets/images/favicon/Space_LABS_black2_48x48.ico' | relative_url }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ 'assets/images/favicon/Space_LABS_black2_180x180.png' | relative_url }}">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ 'assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ 'assets/fonts/font-awesome/css/font-awesome.min.css' | relative_url }}">
+    <script src="https://kit.fontawesome.com/0771fcf7c9.js" crossorigin="anonymous"></script>
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}">
+    <meta property="og:description" content="{{ page.description | default: site.description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+</head>
+<body>
+    <!-- Tahir Salahov Header -->
+    <header class="salahov-header">
+        <div class="salahov-image">
+            <img src="https://images.unsplash.com/photo-1579952363873-27d3bfad9c0d?q=80&w=2000" 
+                 alt="To You Humanity - Tahir Salahov inspired space art" 
+                 class="header-painting">
+        </div>
+        <div class="header-overlay">
+            <div class="main-logo-align">
+                <a href="{{ '/' | relative_url }}">
+                    <img src="{{ 'images/Space_LABS_black2.jpg' | relative_url }}" alt="UK Space LABS logo" class="main-logo"/>
+                </a>
+            </div>
+            <h1 class="site-title">{{ site.title }}</h1>
+            <p class="site-subtitle">{{ page.subtitle | default: "Space Life & Biomedical Sciences Association" }}</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-navigation">
+        <div class="container">
+            <div class="nav-wrapper">
+                {% for item in site.data.pagelist.docs %}
+                <div class="nav-tab">
+                    <a href="{{ item.url | relative_url }}" class="nav-link">{{ item.title }}</a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </nav>
+
+    <!-- Moving Earth Background -->
+    <div class="earth-background" id="earthBg"></div>
+
+    <!-- Floating Stars -->
+    <div class="floating-elements">
+        <div class="floating-star" style="top: 20%; left: 10%; font-size: 2rem;">✦</div>
+        <div class="floating-star" style="top: 30%; right: 15%; font-size: 1.5rem;">✧</div>
+        <div class="floating-star" style="bottom: 40%; left: 20%; font-size: 1.8rem;">★</div>
+        <div class="floating-star" style="top: 60%; right: 25%; font-size: 1.3rem;">✦</div>
+        <div class="floating-star" style="bottom: 20%; right: 10%; font-size: 2.2rem;">✧</div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            {% if site.under_construction %}
+                <!-- Under Construction Content -->
+                <div class="maintenance-page">
+                    <div class="maintenance-container">
+                        <div class="astronaut">
+                            <img src="{{ 'images/space_tardigrade.png' | relative_url }}" alt="Space Tardigrade" />
+                        </div>
+                        <h1>Houston, We Have Maintenance...</h1>
+                        <p>Our spaceship is undergoing a quick tune-up. We'll be launching again shortly!</p>
+                        <p>In the meantime, don't forget to hydrate... even in zero gravity.</p>
+                        
+                        <!-- Contact info even during maintenance -->
+                        <div class="maintenance-contact">
+                            <h3>🚀 Stay Connected</h3>
+                            <div class="contact-links">
+                                {% if site.social-email %}
+                                    <a href="mailto:{{ site.social-email }}" class="contact-btn">
+                                        <i class="fa fa-envelope" aria-hidden="true"></i> Contact Us
+                                    </a>
+                                {% endif %}
+                                {% if site.social-linkedin %}
+                                    <a href="https://www.linkedin.com/groups/{{ site.social-linkedin }}/" target="_blank" class="contact-btn">
+                                        <i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn Group
+                                    </a>
+                                {% endif %}
+                                {% if site.social-github %}
+                                    <a href="https://github.com/{{ site.social-github }}" target="_blank" class="contact-btn">
+                                        <i class="fa fa-github" aria-hidden="true"></i> GitHub
+                                    </a>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% else %}
+                <!-- Regular Content -->
+                {{ content }}
+            {% endif %}
+        </div>
+    </main>
+
+    <!-- Footer -->
+    {% include footer.html %}
+
+    <!-- Back to Top Rocket -->
+    <div class="rocket-to-top" id="rocketToTop">
+        <i class="fa fa-rocket" aria-hidden="true"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Mouse tracking for Earth background movement
+        let mouseX = 0, mouseY = 0;
+        let targetX = 0, targetY = 0;
+
+        document.addEventListener('mousemove', function(e) {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            
+            const windowWidth = window.innerWidth;
+            const windowHeight = window.innerHeight;
+            
+            // Calculate movement with delay (slower movement)
+            targetX = (mouseX / windowWidth - 0.5) * 20;
+            targetY = (mouseY / windowHeight - 0.5) * 20;
+        });
+
+        // Smooth animation loop for background movement
+        function animateBackground() {
+            const earthBg = document.getElementById('earthBg');
+            if (earthBg) {
+                earthBg.style.transform = `translate(${targetX}px, ${targetY}px)`;
+            }
+            requestAnimationFrame(animateBackground);
+        }
+        animateBackground();
+
+        // Add dynamic star twinkling
+        const stars = document.querySelectorAll('.floating-star');
+        stars.forEach(star => {
+            setInterval(() => {
+                star.style.opacity = Math.random() * 0.5 + 0.5;
+            }, Math.random() * 3000 + 1000);
+        });
+
+        // Rocket to top functionality
+        const rocketToTop = document.getElementById('rocketToTop');
+        
+        // Show/hide rocket based on scroll position
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                rocketToTop.classList.add('visible');
+            } else {
+                rocketToTop.classList.remove('visible');
+            }
+        });
+
+        // Rocket click event with animation
+        rocketToTop.addEventListener('click', function() {
+            // Add launch animation
+            rocketToTop.classList.add('launching');
+            
+            // Smooth scroll to top
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+
+            // Remove launch animation after delay
+            setTimeout(() => {
+                rocketToTop.classList.remove('launching');
+            }, 1000);
+        });
+
+        // Parallax effect for header
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            const salahov = document.querySelector('.salahov-header');
+            if (salahov) {
+                salahov.style.transform = `translateY(${scrolled * 0.3}px)`;
+            }
+        });
+
+        // Enhanced scroll animations for content sections
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections for animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('.content-section, .about-section, .partners-section');
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
