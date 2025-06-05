@@ -2,7 +2,7 @@
 # Global site variables
 
  title: "The UK Space Life and Biomedical Sciences Association (UK Space LABS)"
- under_construction: false # true
+ under_construction: # false # true
  description: > # this is for RSS feed
     This is a brief description of the website.
     This is another placeholder line.
