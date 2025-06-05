@@ -1,8 +1,98 @@
-<div class="center-footer">
-  <!--font color="#808080"-->
-    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target=“_blank” ><img alt="Creative Commons License" style="border-width:0" width="10%" height="10%" src="images/Cc-by-nc-sa_icon_svg.png" /></a>
-    <br>
-    This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution 4.0 International License</a>.
+<footer class="footer space-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="center-footer">
+                <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">
+                    <img alt="Creative Commons License" 
+                         style="border-width:0" 
+                         width="10%" 
+                         height="10%" 
+                         src="{{ 'images/Cc-by-nc-sa_icon_svg.png' | relative_url }}" />
+                </a>
+                <br>
+                <p class="footer-text">
+                    ✨ This work is licensed under a 
+                    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                        Creative Commons Attribution 4.0 International License
+                    </a> ✨
+                </p>
+                
+                <p class="footer-text">
+                    🚀 Boldly advancing space biomedicine for humanity's cosmic journey 🌍
+                </p>
+            </div>
+            
+            <div class="footer-copyright">
+                <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }}. 
+                Advancing space life sciences and biomedical research.</p>
+            </div>
+        </div>
+    </div>
+</footer>
 
-  <!--/font-->
-</div>
+<style>
+.space-footer {
+    background: rgba(0, 0, 0, 0.9);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 2rem 0;
+    text-align: center;
+    color: #87ceeb;
+    backdrop-filter: blur(10px);
+    margin-top: 3rem;
+}
+
+.footer-text {
+    font-style: italic;
+    opacity: 0.9;
+    margin: 1rem 0;
+    color: #e6f3ff;
+    line-height: 1.6;
+}
+
+.footer-text a {
+    color: #4a9eff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-text a:hover {
+    color: #00d4ff;
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+.footer-copyright {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #b0c4de;
+    font-size: 0.9rem;
+}
+
+.center-footer {
+    text-align: center;
+}
+
+.center-footer img {
+    filter: brightness(1.2) contrast(1.1);
+    transition: transform 0.3s ease;
+}
+
+.center-footer img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .space-footer {
+        padding: 1.5rem 0;
+    }
+    
+    .footer-text {
+        font-size: 0.9rem;
+    }
+    
+    .center-footer img {
+        width: 15%;
+        height: 15%;
+    }
+}
+</style>
