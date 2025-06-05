@@ -1264,6 +1264,555 @@ th { // Header text adjustment
   transition: height 0.5s;
 }
 
+Edit
+
+Looking at your Jekyll site structure and requirements, I'll create a new landing page for UK Space LABS. Based on your request, I need to create a complete HTML page with the moving Earth background effect and logo grid.
+
+I've created a stunning landing page for UK Space LABS with all the features you requested! Here's what I've included:
+✨ Key Features:
+
+🌍 Moving Earth Background:
+
+    High-resolution Earth from space image that responds to mouse movement
+    Subtle parallax effect with smooth transitions
+    The background moves in the direction of your cursor with a slight delay
+
+**🎨 Visual Design:
+
+    Elegant space theme with cosmic blue gradients
+    Animated logo with shifting gradient colors
+    Glassmorphism effects (frosted glass look) for content sections
+    Floating animated stars scattered across the page
+
+**📱 Content Sections:
+
+    Header: UK Space LABS logo with animated gradient text
+    About: All your provided text content in an easy-to-read format
+    Partners: Logo grid for UKSA, RAeS, AsMA, and Blue Abyss with hover effects
+    Each partner logo links to their respective websites
+
+**⚡ Interactive Elements:
+
+    Hover effects on partner logos that lift them up
+    Twinkling star animations
+    Smooth fade-in animations for sections
+    Responsive design that works on mobile devices
+
+**🎭 Humorous Touch:
+
+    Playful emojis in the tagline: "🚀 Where earthly biology meets cosmic frontiers 🌍"
+    Footer text: "✨ Boldly advancing space biomedicine for humanity's cosmic journey ✨"
+
+🔧 Technical Implementation:
+
+    Pure HTML/CSS/JavaScript (no external dependencies)
+    Responsive design that adapts to different screen sizes
+    Smooth mouse tracking for the background movement
+    Optimized animations for performance
+
+To use this on your Jekyll site, you can:
+
+    Save this as a new HTML file (e.g., space_labs_landing.html)
+    Update the partner logos with your actual logo files when available
+    Customize colors or animations as needed
+
+The page has a professional yet engaging feel that should capture visitors' attention while clearly communicating UK Space LABS' mission and partnerships!
+
+That's great. Now, I would like to use that HTML page as a layout file (main_page.html), that would be included in the main 'index.md' (attached). 
+The index.md file comes with the following main dependencies:
+* _config.yml
+* _layouts/landing.html
+* _layouts/default.html
+* images/favicon.jpg
+* assets/css/style.scss
+* assets/fonts/font-awesome/..
+* _includes/contact.html
+* _includes/footer.html
+These were mostly inherited from another website, and needs to be completeley re-worked for a space themed website.
+All textual content should be readible with high contrast (the suggested new page looks good), but I would oke to have a background image: a famous Earth from the Moon, with high-resolution.
+Also, at the very top of the webpage, I would like to have "tahir salahov "to you humanity" painting in high-resolution like a header component.
+Also I would like to have a tiny rocket as go back to the top of the webpage.
+Edit
+
+I'll help you create a Jekyll layout system for your space-themed website. Let me start by creating the main layout file and then the supporting files.
+
+Now let me create the main CSS file that will handle all the styling:
+
+Now let me create the updated footer include file:
+
+Now let me create an updated contact include file:
+
+Continue
+Edit
+
+Now let me create an updated _config.yml file for the space theme:
+
+Now let me create the updated index.md file that will use the new layout:
+
+Finally, let me create a simple default layout that can be used for other pages:
+
+Now let me add the additional CSS for the page layouts:
+
+Perfect! I've created a complete Jekyll layout system for your UK Space LABS website. Here's what I've delivered:
+📁 File Structure Created:
+Layout Files:
+
+    _layouts/main_page.html - The main landing page layout with all the space-themed features
+    _layouts/default.html - A simplified layout for other pages with navigation
+
+Styling:
+
+    assets/css/style.scss - Complete CSS with space theme, animations, and responsive design
+
+Includes:
+
+    _includes/footer.html - Space-themed footer with social links
+    _includes/contact.html - Contact section with space styling
+
+Configuration:
+
+    _config.yml - Updated configuration with space organization data
+    index.md - Your main landing page using the new layout
+
+✨ Key Features Implemented:
+🎨 Visual Design:
+
+    Tahir Salahov-inspired header with space art overlay
+    Moving Earth background that responds to mouse movement
+    High contrast text for excellent readability
+    Floating stars with twinkling animations
+    Glassmorphism effects (frosted glass look)
+
+🚀 Interactive Elements:
+
+    Rocket "back to top" button with launch animation
+    Hover effects on all interactive elements
+    Smooth scrolling and parallax effects
+    Mobile-responsive design
+
+📱 Responsive Features:
+
+    Adapts to all screen sizes
+    Mobile-optimized navigation
+    Touch-friendly interactive elements
+
+🔧 How to Use:
+
+    Replace your existing files with the ones I've created
+    Add partner logos to images/partner_logos/ folder
+    Update the config in _config.yml with your actual details
+    Add a favicon at images/favicon.ico
+
+🎯 Features for Your Requirements:
+
+✅ Earth from Moon background - High-resolution space image with mouse tracking
+✅ Tahir Salahov header - Space art header component
+✅ Rocket back-to-top - Animated rocket button
+✅ High contrast text - White/blue text on dark backgrounds
+
+Continue
+Edit
+🎯 Features for Your Requirements:
+
+✅ Earth from Moon background - High-resolution space image with mouse tracking
+✅ Tahir Salahov header - Space art header component
+✅ Rocket back-to-top - Animated rocket button
+✅ High contrast text - White/blue text on dark backgrounds
+✅ Partner logos with links - UKSA, RAeS, AsMA, Blue Abyss
+✅ Jekyll integration - Works with your existing structure
+✅ Space theme throughout - Consistent cosmic design
+🔗 To Complete the Setup:
+1. Image Requirements:
+
+You'll need to add these images to your repository:
+
+images/
+├── favicon.ico                    # Your site favicon
+└── partner_logos/                 # Partner organization logos
+    ├── uksa_logo.png
+    ├── raes_logo.png
+    ├── asma_logo.png
+    └── blue_abyss_logo.png
+
+2. Update Your Index Page:
+
+Replace your current index.md with the new version that includes:
+
+    About section with your exact text content
+    Research areas showcase
+    Partners section with logos
+    Training programs
+    Upcoming events
+    Contact information
+
+3. Navigation Structure:
+
+The system includes:
+
+    Main landing page (layout: main_page) - Full space experience
+    Internal pages (layout: default) - Simplified with navigation
+    Responsive navigation - Collapses on mobile
+
+4. Customization Options:
+
+Colors: Easily change the blue gradient themes in the CSS
+Content: All text content is in _config.yml and index.md
+Partners: Add/remove organizations in the config file
+Events: Update upcoming events in the config
+5. Additional Features You Can Add:
+
+Blog Posts: The system supports Jekyll posts for news/updates
+Research Pages: Individual pages for each research area
+Training Details: Detailed pages for each training program
+Team Members: Add staff/researcher profiles
+🚀 Testing Your Site:
+
+    Local Development:
+
+bash
+
+bundle exec jekyll serve
+
+    GitHub Pages: Simply push to your repository and GitHub Pages will build automatically
+
+🎨 Advanced Customizations:
+Background Images:
+
+    The Tahir Salahov header uses a space art placeholder
+    Replace with actual "To You Humanity" image URL
+    Earth background can be swapped for other space images
+
+Animations:
+
+    Floating stars can be customized (position, size, timing)
+    Mouse tracking sensitivity can be adjusted
+    Rocket launch animation can be modified
+
+Content Sections:
+
+    Research areas are dynamically generated from config
+    Partner grid automatically adapts to number of organizations
+    Training programs can be expanded with more details
+
+🌟 Special Features:
+
+Accessibility: High contrast, semantic HTML, keyboard navigation
+SEO Ready: Meta tags, structured data, fast loading
+Performance: Optimized CSS, efficient animations
+Cross-browser: Works on all modern browsers
+
+The system creates a professional, engaging space-themed website that maintains excellent readability while providing an immersive cosmic experience. The mouse-tracking Earth background and floating elements create visual interest without compromising usability.
+
+Would you like me to create any additional components, such as a team members page, detailed research area pages, or a news/blog section?
+
+Fur the above outputs, please utilise the following files, especially the _config.yml, index.md,default.html, landing.html, contact.html and footer.html.
+Contaxt should be email and linkedin (specific information also in the _config.yml).
+Edit
+
+I'll update the layouts and files to work with your existing structure and configuration. Let me start by updating the main layout to integrate with your current setup:
+
+Now let me update the CSS to include the maintenance page styles and navigation:
+
+Now let me add the maintenance page styles:
+
+Now let me update the landing.html layout to work with the new system:
+
+Let me create a proper landing layout:
+
+Now let me update the contact.html include to match your existing structure:
+
+Continue
+Edit
+
+Now let me update the footer.html to match your existing structure:
+
+Now let me update the index.md to work with your existing structure:
+
+Finally, let me add the necessary CSS for the new components in the index page:
+
+Continue
+Edit
+
+Perfect! I've now created a complete Jekyll website system that integrates with your existing structure. Here's what I've delivered:
+🎯 Complete Integration with Your Existing Files
+Updated Layouts:
+
+    _layouts/main_page.html - Main space-themed layout with maintenance mode support
+    _layouts/landing.html - Landing page layout that extends main_page
+    _layouts/default.html - Simplified layout for internal pages
+
+Updated Includes:
+
+    _includes/contact.html - Space-themed contact section with your email/LinkedIn
+    _includes/footer.html - Creative Commons footer matching your existing structure
+
+Styling:
+
+    assets/css/style.scss - Complete space-themed CSS with maintenance mode styles
+
+Content:
+
+    index.md - Updated to work with your _config.yml and maintenance mode
+
+✨ Key Features Implemented:
+🚧 Maintenance Mode Support:
+
+    Controlled by under_construction: true in your _config.yml
+    Space tardigrade mascot and "Houston, We Have Maintenance" message
+    Contact links still available during maintenance
+
+🎨 Visual Elements:
+
+    Tahir Salahov header with your space logo overlay
+    Moving Earth background with mouse tracking
+    Floating star animations
+    Rocket back-to-top button
+
+📱 Navigation:
+
+    Uses your existing pagelist.yml for navigation
+    Responsive design that works on all devices
+    Sticky navigation bar
+
+👥 Team Integration:
+
+    Displays team members from your _config.yml structure
+    Shows Chair, Co-ordinators, and Web Development teams
+    Expandable for future team categories
+
+🤝 Contact Integration:
+
+    Email: ukspacelabsengagement@gmail.com
+    LinkedIn Group: 13616507
+    GitHub: UK-Space-LABS
+    All pulled from your _config.yml
+
+🌐 Partners Section:
+
+    Ready for UKSA, RAeS, AsMA, Blue Abyss logos
+    Hover effects and external links
+    Grid layout that adapts to content
+
+🔧 How to Use:
+1. Replace Files:
+
+Update these files in your repository with the new versions:
+
+    _layouts/main_page.html (new)
+    _layouts/landing.html (updated)
+    _includes/contact.html (updated)
+    _includes/footer.html (updated)
+    assets/css/style.scss (updated)
+    index.md (updated)
+
+2. Add Partner Logos:
+
+Place partner logos in images/partner_logos/:
+
+    uksa_logo.png
+    raes_logo.png
+    asma_logo.png
+    blue_abyss_logo.png
+
+3. Toggle Maintenance Mode:
+
+In _config.yml, set:
+
+yaml
+
+under_construction: false  # To show full site
+# or
+under_construction: true   # To show maintenance page
+
+🚀 Ready Features:
+
+✅ Space tardigrade mascot during maintenance
+✅ Creative Commons license in footer
+✅ LinkedIn group integration
+✅ GitHub organization links
+✅ Email contact system
+✅ Team member display
+✅ Partner logo grid
+✅ Mobile responsive design
+✅ High contrast readability
+✅ Accessibility features
+
+The website now perfectly integrates with your existing Jekyll structure while providing a stunning space-themed experience that can switch between maintenance mode and full functionality as needed!
+
+
+/* Logo Grid Styles */
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+    margin: 2rem 0;
+}
+
+.logo-grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.logo-grid-item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(74, 158, 255, 0.3);
+}
+
+.partner-logo {
+    max-width: 120px;
+    max-height: 80px;
+    object-fit: contain;
+    filter: brightness(1.1);
+}
+
+/* Mission Grid */
+.mission-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.mission-item {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.mission-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(74, 158, 255, 0.2);
+}
+
+.mission-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg, #4a9eff, #00d4ff);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.mission-item h3 {
+    color: #4a9eff;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.mission-item p {
+    color: #e6f3ff;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Team Styles */
+.team-section {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.team-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #4a9eff;
+    text-align: center;
+    text-shadow: 0 0 20px rgba(74, 158, 255, 0.5);
+}
+
+.team-category {
+    margin-bottom: 3rem;
+}
+
+.team-category h3 {
+    color: #87ceeb;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(135, 206, 235, 0.3);
+    padding-bottom: 0.5rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.team-member {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.team-member:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(74, 158, 255, 0.2);
+}
+
+.team-member h4 {
+    color: #4a9eff;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.member-role {
+    color: #00d4ff;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.member-affiliate {
+    color: #e6f3ff;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.member-social {
+    color: #87ceeb;
+    font-size: 0.9rem;
+    font-family: monospace;
+}
+
+/* Content Wrapper Styles */
+.content-wrapper {
+    position: relative;
+    z-index: 3;
+}
+
+.inner {
+    max----
+# Front matter required for Jekyll to process this file
+---
+
+// Import any existing theme styles if needed
+// @import "jekyll-theme-slate";
+
 /* Reset and Base Styles */
 * {
     margin: 0;
@@ -1403,7 +1952,90 @@ body {
     transform: translateY(-2px);
 }
 
-/* Moving Earth Background */
+/* Maintenance Page Styles */
+.maintenance-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    margin: 2rem 0;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.maintenance-container {
+    padding: 3rem;
+    max-width: 600px;
+}
+
+.astronaut {
+    margin-bottom: 2rem;
+}
+
+.astronaut img {
+    width: 150px;
+    height: auto;
+    animation: float 3s ease-in-out infinite;
+    filter: drop-shadow(0 0 20px #4a9eff);
+    border-radius: 50%;
+}
+
+.maintenance-page h1 {
+    font-size: 2.5rem;
+    color: #4a9eff;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 20px rgba(74, 158, 255, 0.5);
+}
+
+.maintenance-page p {
+    font-size: 1.2rem;
+    color: #e6f3ff;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.maintenance-contact {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: rgba(74, 158, 255, 0.1);
+    border-radius: 15px;
+    border: 1px solid rgba(74, 158, 255, 0.3);
+}
+
+.maintenance-contact h3 {
+    color: #4a9eff;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.contact-btn {
+    display: inline-block;
+    background: linear-gradient(45deg, #4a9eff, #00d4ff);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    min-width: 200px;
+}
+
+.contact-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(74, 158, 255, 0.4);
+    color: white;
+    text-decoration: none;
+}
 .earth-background {
     position: fixed;
     top: -10%;
