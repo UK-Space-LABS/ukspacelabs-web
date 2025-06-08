@@ -57,47 +57,41 @@
     
     <div class="contact-social-list">
         <ul>
-            {% if site.social-github %}
-                <li class="github">
+            <li class="github">
+                {% if site.social-github %}
                     <a href="https://github.com/{{ site.social-github }}" target="_blank">
                         <i class="fa fa-github"></i>
                     </a>
-                </li>
-            {% else %}
-                <li class="github">
+                {% else %}
                     <a href="https://github.com/UK-Space-LABS/" target="_blank">
                         <i class="fa fa-github" aria-hidden="true"></i>
                     </a>
-                </li>
-            {% endif %}
+                {% endif %}
+            </li>
             
-            {% if site.social-linkedin %}
-                <li class="linkedin">
+            <li class="linkedin">
+                {% if site.social-linkedin %}
                     <a href="https://www.linkedin.com/groups/{{ site.social-linkedin }}/" target="_blank">
                         <i class="fa fa-linkedin"></i>
                     </a>
-                </li>
-            {% else %}
-                <li class="linkedin">
+                {% else %}
                     <a href="https://www.linkedin.com/groups/13616507/" target="_blank">
                         <i class="fa fa-linkedin" aria-hidden="true"></i>
                     </a>
-                </li>
-            {% endif %}
+                {% endif %}
+            </li>
             
-            {% if site.social-email %}
-                <li class="email">
+            <li class="email">
+                {% if site.social-email %}
                     <a href="mailto:{{ site.social-email }}">
                         <i class="fa fa-envelope-o"></i>
                     </a>
-                </li>
-            {% else %}
-                <li class="email">
+                {% else %}
                     <a href="mailto:ukspacelabsengagement@gmail.com">
                         <i class="fa fa-envelope-o" aria-hidden="true"></i>
                     </a>
-                </li>
-            {% endif %}
+                {% endif %}
+            </li>
         </ul>
     </div>
     
@@ -159,6 +153,12 @@
     font-size: 1.3rem;
 }
 
+.contact-item h4 {
+    color: #4a9eff;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
 .contact-item p {
     color: #e6f3ff;
     margin-bottom: 1rem;
@@ -185,26 +185,39 @@
     box-shadow: 0 5px 15px rgba(0, 212, 255, 0.3);
 }
 
-.social-links {
+.contact-social-list ul {
     display: flex;
     gap: 1rem;
     justify-content: center;
     flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
 }
 
-.social-link {
+.contact-social-list li {
+    margin: 0;
+}
+
+.contact-social-list a {
     color: #4a9eff;
     text-decoration: none;
-    padding: 0.5rem 1rem;
-    border: 1px solid rgba(74, 158, 255, 0.3);
-    border-radius: 20px;
+    padding: 0.8rem;
+    border: 2px solid rgba(74, 158, 255, 0.3);
+    border-radius: 50%;
     transition: all 0.3s ease;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
 }
 
-.social-link:hover {
+.contact-social-list a:hover {
     background: rgba(74, 158, 255, 0.2);
-    transform: translateY(-2px);
+    transform: translateY(-2px) scale(1.1);
+    box-shadow: 0 5px 20px rgba(74, 158, 255, 0.4);
 }
 
 .contact-cta {
@@ -237,9 +250,16 @@
         padding: 1.5rem;
     }
     
-    .social-links {
-        flex-direction: column;
-        align-items: center;
+    .contact-social-list ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.8rem;
+    }
+    
+    .contact-social-list a {
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
     }
 }
 </style>
