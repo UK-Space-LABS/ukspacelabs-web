@@ -33,11 +33,6 @@
                  class="header-painting">
         </div>
         <div class="header-overlay">
-            <!--<div class="main-logo-align">
-                <a href="{{ '/' | relative_url }}">
-                    <img src="{{ 'images/Space_Logo_col_dEC_14.jpg' | relative_url }}" alt="UK Space LABS logo" class="main-logo"/>
-                </a>
-            </div>-->
             <h1 class="site-title">{{ site.title }}</h1>
             <p class="site-subtitle">{{ page.subtitle | default: "Space Life & Biomedical Sciences Association" }}</p>
         </div>
@@ -112,7 +107,7 @@
         </div>
     </main>
 
-    <!-- Footer -->
+    <!-- Contact and Footer - MOVED OUTSIDE MAIN CONTENT -->
     {% include contact.html %}
     {% include footer.html %}
 
@@ -184,15 +179,6 @@
             setTimeout(() => {
                 rocketToTop.classList.remove('launching');
             }, 1000);
-        });
-
-        // Parallax effect for header
-        window.addEventListener('scroll', function() {
-            const scrolled = window.pageYOffset;
-            const salahov = document.querySelector('.salahov-header');
-            if (salahov) {
-                salahov.style.transform = `translateY(${scrolled * 0.3}px)`;
-            }
         });
 
         // Enhanced scroll animations for content sections
