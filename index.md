@@ -26,9 +26,9 @@ partners:
 {% else %}
 
 <section class="about-section" id="about">
-  <h2>🚀 About UK Space LABS</h2>
+  <h2>About the Mission of UK Space LABS</h2>
   
-  <p>{{ site.about-author }} exists to optimise <strong>communication, cooperation and collaboration (C3)</strong> between UK based organisations and individuals and foreign entities involved in research, healthcare, commerce, education and outreach activities related to space life and biomedical sciences and the human element of human spaceflight.</p>
+  <p> {{ site.about-author }} exists to optimise <strong>communication, cooperation and collaboration (C3)</strong> between UK based organisations and individuals and foreign entities involved in research, healthcare, commerce, education and outreach activities related to space life and biomedical sciences and the human element of human spaceflight.</p>
   
   <p>The Association aims to enhance the practice, output and benefits of the Space Life and Biomedical Sciences field of endeavour in the UK and contribute to the development and translation of space science and services to terrestrial needs.</p>
   
@@ -37,8 +37,43 @@ partners:
   <p>UK Space LABS will also promote the establishment of harmonised space biomedicine education globally and to propel the progression of this multidisciplinary field.</p>
 </section>
 
-<section class="content-section" id="mission">
-  <h2>🌟 Our Mission</h2>
+<!-- Partners Section -->
+    <section class="partners-section">
+        <h2>Partners, Collaborators and Affiliated Organisations</h2>
+            <div class="partners-grid">
+                <div class="partner-item">
+                    <a href="https://www.gov.uk/government/organisations/uk-space-agency" target="_blank" class="partner-logo">
+                        UKSA
+                    </a>
+                    <div class="partner-name">UK Space Agency</div>
+                </div>
+                
+                <div class="partner-item">
+                    <a href="https://www.aerosociety.com/" target="_blank" class="partner-logo">
+                        RAeS
+                    </a>
+                    <div class="partner-name">Royal Aeronautical Society</div>
+                </div>
+                
+                <div class="partner-item">
+                    <a href="https://www.asma.org/" target="_blank" class="partner-logo">
+                        AsMA
+                    </a>
+                    <div class="partner-name">Aerospace Medical Association</div>
+                </div>
+                
+                <div class="partner-item">
+                    <a href="https://www.blueabyss.uk/" target="_blank" class="partner-logo">
+                        Blue Abyss
+                    </a>
+                  <div class="partner-name">Blue Abyss</div>
+              </div>
+          </div>
+    </section>
+
+
+<!--<section class="content-section" id="mission">
+  <h2>Our Partners</h2>
   
   <div class="mission-grid">
     <div class="mission-item">
@@ -65,10 +100,10 @@ partners:
       <p>Promoting UK involvement in human spaceflight and advancing space science applications for terrestrial needs.</p>
     </div>
   </div>
-</section>
+</section>-->
 
 <section class="team-section" id="team">
-  <h2>👥 Our Team</h2>
+  <h2>Our Team</h2>
   
   {% if site.chair %}
   <div class="team-category">
