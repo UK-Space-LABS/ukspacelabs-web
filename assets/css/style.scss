@@ -1765,3 +1765,140 @@ body {
         display: none; /* Hide on very small screens for performance */
     }
 }
+
+/* Tahir Salahov Header - Enhanced Responsiveness */
+.salahov-header {
+    position: relative;
+    width: 100vw; /* Full viewport width */
+    height: 60vh; /* Increased height for better visibility */
+    min-height: 500px; /* Increased minimum height */
+    max-height: 800px; /* Maximum height to prevent oversized headers */
+    overflow: hidden;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.salahov-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.header-painting {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire area */
+    object-position: center center; /* Centers the image */
+    filter: brightness(0.7) contrast(1.2) saturate(1.1);
+    transition: transform 0.3s ease-out;
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        45deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(74, 158, 255, 0.2) 50%,
+        rgba(0, 0, 0, 0.5) 100%
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 3; /* Increased z-index */
+    padding: 2rem;
+}
+
+/* MAIN CONTENT SPACING FIXES */
+.main-content {
+    position: relative;
+    z-index: 3;
+    min-height: auto; /* Remove fixed height */
+    padding: 3rem 0; /* Add more padding */
+    margin-bottom: 3rem; /* Add bottom margin for spacing */
+}
+
+/* CONTACT SECTION POSITIONING FIXES */
+.contact.space-contact {
+    margin-top: 4rem; /* Ensure clear separation from main content */
+    padding: 3rem 0;
+    background: rgba(0, 0, 0, 0.9);
+    border-top: 2px solid rgba(74, 158, 255, 0.3);
+    position: relative;
+    z-index: 2;
+}
+
+/* FOOTER POSITIONING FIXES */
+.footer.space-footer {
+    margin-top: 0; /* Remove top margin since contact handles spacing */
+    position: relative;
+    z-index: 2;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* RESPONSIVE BREAKPOINTS FOR HEADER */
+@media (max-width: 1200px) {
+    .salahov-header {
+        height: 55vh;
+        min-height: 450px;
+    }
+    
+    .site-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .salahov-header {
+        height: 45vh;
+        min-height: 350px;
+        max-height: 500px;
+    }
+    
+    .site-title {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    
+    .site-subtitle {
+        font-size: 1rem;
+    }
+    
+    .header-overlay {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .salahov-header {
+        height: 40vh;
+        min-height: 300px;
+    }
+    
+    .site-title {
+        font-size: 1.6rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .site-subtitle {
+        font-size: 0.9rem;
+    }
+}
+
+/* LANDSCAPE ORIENTATION FIXES */
+@media (orientation: landscape) and (max-height: 600px) {
+    .salahov-header {
+        height: 80vh;
+        min-height: 400px;
+    }
+}
