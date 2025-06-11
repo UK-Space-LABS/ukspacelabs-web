@@ -67,7 +67,7 @@ partners:
       <a href="https://www.blueabyss.uk/" target="_blank" class="partner-logo">
           Blue Abyss
       </a>
-   <div class="partner-name">Blue Abyss</div>
+   <div class="partner-name">Blue Abyss Ltd</div>
   </div>
   </div>
 </section>
