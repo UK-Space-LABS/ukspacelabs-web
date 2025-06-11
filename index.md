@@ -38,38 +38,39 @@ partners:
 </section>
 
 <!-- Partners Section -->
-    <section class="partners-section">
-        <h2>Partners, Collaborators and Affiliated Organisations</h2>
-            <div class="partners-grid">
-                <div class="partner-item">
-                    <a href="https://www.gov.uk/government/organisations/uk-space-agency" target="_blank" class="partner-logo">
-                        UKSA
-                    </a>
-                    <div class="partner-name">UK Space Agency</div>
-                </div>
+    
+<section class="partners-section">
+  <h2>Partners, Collaborators and Affiliated Organisations</h2>
+    <div class="partners-grid">
+        <div class="partner-item">
+          <a href="https://www.gov.uk/government/organisations/uk-space-agency" target="_blank" class="partner-logo">
+              UKSA
+          </a>
+        <div class="partner-name">UK Space Agency</div>
+      </div>
                 
-                <div class="partner-item">
-                    <a href="https://www.aerosociety.com/" target="_blank" class="partner-logo">
-                        RAeS
-                    </a>
-                    <div class="partner-name">Royal Aeronautical Society</div>
-                </div>
+  <div class="partner-item">
+        <a href="https://www.aerosociety.com/" target="_blank" class="partner-logo">
+              RAeS
+        </a>
+      <div class="partner-name">Royal Aeronautical Society</div>
+  </div>
                 
-                <div class="partner-item">
-                    <a href="https://www.asma.org/" target="_blank" class="partner-logo">
-                        AsMA
-                    </a>
-                    <div class="partner-name">Aerospace Medical Association</div>
-                </div>
+  <div class="partner-item">
+        <a href="https://www.asma.org/" target="_blank" class="partner-logo">
+            AsMA
+        </a>
+      <div class="partner-name">Aerospace Medical Association</div>
+  </div>
                 
-                <div class="partner-item">
-                    <a href="https://www.blueabyss.uk/" target="_blank" class="partner-logo">
-                        Blue Abyss
-                    </a>
-                  <div class="partner-name">Blue Abyss</div>
-              </div>
-          </div>
-    </section>
+  <div class="partner-item">
+      <a href="https://www.blueabyss.uk/" target="_blank" class="partner-logo">
+          Blue Abyss
+      </a>
+   <div class="partner-name">Blue Abyss</div>
+  </div>
+  </div>
+</section>
 
 
 <!--<section class="content-section" id="mission">
