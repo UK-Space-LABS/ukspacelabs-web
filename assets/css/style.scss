@@ -1047,7 +1047,7 @@ body {
 }
 
 /* Tahir Salahov Header */
-.salahov-header {
+/*.salahov-header {
     position: relative;
     width: 100%;
     height: 50vh;
@@ -1090,6 +1090,62 @@ body {
     align-items: center;
     text-align: center;
     z-index: 2;
+}*/
+
+.salahov-header {
+    position: relative;
+    width: 100%;
+    height: 50vh; /* Adjust this value as needed */
+    min-height: 300px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.salahov-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.header-painting {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures the image covers the container while maintaining aspect ratio */
+    object-position: center;
+}
+
+.header-overlay {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .salahov-header {
+        height: 40vh;
+        min-height: 250px;
+    }
+    
+    .header-overlay {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .salahov-header {
+        height: 35vh;
+        min-height: 200px;
+    }
 }
 
 .main-logo-align {
