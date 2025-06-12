@@ -7,16 +7,16 @@ subtitle: Welcome - The UK Space Life and Biomedical Sciences Association
 
 partners:
 - name: UK Space Agency (UKSA)
-  logo_path: images/partner_logos/uksa_logo.png
+  logo_path: images/partners/uk-space-agency-logo_500x500.png
   ref_url: https://www.gov.uk/government/organisations/uk-space-agency
 - name: Royal Aeronautical Society (RAeS)
-  logo_path: images/partner_logos/raes_logo.png
+  logo_path: images/partners/royal-aeronautical-society-logo-300x300.jpg
   ref_url: https://www.aerosociety.com/
 - name: Aerospace Medical Association (AsMA)
-  logo_path: images/partner_logos/asma_logo.png
+  logo_path: images/partners/aerospace_medical_association_logo_612x612.jpg
   ref_url: https://www.asma.org/
 - name: Blue Abyss
-  logo_path: images/partner_logos/blue_abyss_logo.png
+  logo_path: images/partners/BA_logo_1920x869.jpg
   ref_url: https://www.blueabyss.uk/
 ---
 
@@ -39,6 +39,7 @@ partners:
 
 <!-- Partners Section -->
     
+<!--
 <section class="partners-section">
   <h2>Partners, Collaborators and Affiliated Organisations</h2>
     <div class="partners-grid">
@@ -71,7 +72,22 @@ partners:
   </div>
   </div>
 </section>
+-->
 
+<section class="partners-section">
+  <h2>Partners, Collaborators and Affiliated Organisations</h2>
+  <div class="partners-grid">
+    {% for partner in page.partners %}
+    <div class="partner-item">
+      <a href="{{ partner.ref_url }}" target="_blank" class="partner-logo-link">
+        <div class="partner-logo-container">
+          <img src="{{ partner.logo_path | relative_url }}" alt="{{ partner.name }} logo" class="partner-logo-img">
+        </div>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</section>
 
 <!--<section class="content-section" id="mission">
   <h2>Our Partners</h2>
@@ -373,6 +389,90 @@ partners:
   color: #b0c4de;
   margin-top: 0.5rem;
   line-height: 1.4;
+}
+
+.partners-section {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.partner-item {
+  transition: all 0.3s ease;
+}
+
+.partner-logo-link {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
+.partner-logo-container {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  padding: 1.5rem;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(74, 158, 255, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.partner-logo-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(74, 158, 255, 0.3);
+  border-color: rgba(74, 158, 255, 0.5);
+  background: rgba(255, 255, 255, 1);
+}
+
+.partner-logo-img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+.partner-logo-link:hover .partner-logo-img {
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .partners-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .partner-logo-container {
+    height: 100px;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .partners-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .partner-logo-container {
+    height: 80px;
+    padding: 0.8rem;
+  }
 }
 
 /* Responsive adjustments */
