@@ -1,0 +1,7 @@
+docs:
+  - title: "Home"
+    url: "/"
+  - title: "Meet the Team"
+    url: "/team/"
+  - title: "Privacy Policy"
+    url: "/privacy/"
