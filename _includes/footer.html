@@ -20,6 +20,11 @@
                 <p class="footer-text">
                     🚀 Boldly advancing space biomedicine for humanity's cosmic journey 🌍
                 </p>
+
+                <!-- Privacy Policy Link -->
+                <div class="footer-links">
+                    <a href="{{ '/privacy/' | relative_url }}" class="footer-link">Privacy Policy</a>
+                </div>
             </div>
             
             <div class="footer-copyright">
@@ -59,6 +64,27 @@
     text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
 }
 
+.footer-links {
+    margin: 1.5rem 0;
+}
+
+.footer-link {
+    color: #87ceeb;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(135, 206, 235, 0.3);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.footer-link:hover {
+    background: rgba(135, 206, 235, 0.2);
+    border-color: rgba(135, 206, 235, 0.6);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(135, 206, 235, 0.3);
+}
+
 .footer-copyright {
     margin-top: 2rem;
     padding-top: 1rem;
@@ -92,6 +118,11 @@
     .center-footer img {
         width: 15%;
         height: 15%;
+    }
+    
+    .footer-link {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
     }
 }
 </style>
