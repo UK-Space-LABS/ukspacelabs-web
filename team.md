@@ -348,4 +348,5 @@ executive_committee:
     padding: 1rem;
   }
 }
+
 </style>
