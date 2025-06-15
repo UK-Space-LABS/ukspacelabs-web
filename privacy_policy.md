@@ -11,7 +11,7 @@ subtitle: Your Privacy Matters to Us
 <section class="privacy-content">
   <div>
   <h2>UK Space LABS Customer Privacy Notice</h2>
-  <a>This privacy notice tells you what to expect us to do with your personal information.</a>
+  <!--<a>This privacy notice tells you what to expect us to do with your personal information.</a>-->
   </div>
   <!-- =============================================================== -->
   <!-- TABLE OF CONTENTS                                               -->
@@ -107,7 +107,7 @@ subtitle: Your Privacy Matters to Us
 
 Which lawful basis we rely on may affect your data protection rights which are in brief set out below. You can find out more about your data protection rights and the exemptions which may apply on the ICO’s website:</p>
 <ul>
-  <li><strong>Your right of access</strong> - You have the right to ask us for copies of your personal information. You can request other information such as details about where we get personal information from and who we share personal information with. There are some exemptions which means you may not receive all the information you ask for. You can learn more about this right [here](https://app-ico-content-prod-uksouth.azurewebsites.net/for-organisations/advice-for-small-organisations/create-your-own-privacy-notice/your-data-protection-rights/#roa){:target="_blank" rel="noopener noreferrer"}</li>
+  <li><strong>Your right of access</strong> - You have the right to ask us for copies of your personal information. You can request other information such as details about where we get personal information from and who we share personal information with. There are some exemptions which means you may not receive all the information you ask for. You can learn more about this right <a href="[https://example.com](https://app-ico-content-prod-uksouth.azurewebsites.net/for-organisations/advice-for-small-organisations/create-your-own-privacy-notice/your-data-protection-rights/#roa)" target="_blank" rel="noopener noreferrer">here</a></li>
   <li>Request correction of inaccurate information</li>
   <li>Request deletion of your personal information</li>
   <li>Opt-out of communications at any time</li>
