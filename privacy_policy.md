@@ -9,7 +9,8 @@ subtitle: Your Privacy Matters to Us
 <!-- PRIVACY POLICY PAGE WITH TABLE OF CONTENTS                         -->
 <!-- =================================================================== -->
 <section class="privacy-content">
-  <h2>Privacy Policy</h2>
+  <h2>UK Space LABS Customer Privacy Notice</h2>
+  <a>This privacy notice tells you what to expect us to do with your personal information.</a>
   <!-- =============================================================== -->
   <!-- TABLE OF CONTENTS                                               -->
   <!-- =============================================================== -->
@@ -17,10 +18,10 @@ subtitle: Your Privacy Matters to Us
     <h3>Table of Contents</h3>
     <ol>
       <li>
-        <a href="#information-we-collect">Information We Collect</a>
+        <a href="#information-we-collect">The Information We Collect</a>
       </li>
       <li>
-        <a href="#how-we-use-your-information">How We Use Your Information</a>
+        <a href="#how-we-use-your-information">How We Use Your Information and for What Purpose</a>
       </li>
       <li>
         <a href="#data-protection-and-security">Data Protection and Security</a>
@@ -47,24 +48,30 @@ subtitle: Your Privacy Matters to Us
   <!-- =============================================================== -->
   <div class="privacy-text">
 
-  <!-- SECTION 1: Information We Collect -->
-<h3 id="information-we-collect">🛡️ Information We Collect</h3>
+  <!-- SECTION 1: What Information We Collect and Why -->
+<h3 id="information-we-collect">The Information We Collect</h3>
 <p>
   UK Space LABS is committed to protecting your privacy and personal information. 
   This privacy policy outlines how we collect, use, and protect any information 
-  you provide when using our website and services.
+  you provide when using our website, services and goods, including delivery and third party referrals.
 </p>
 
-<p>We may collect the following types of information:</p>
+<p>We may collect the following types of information to provide services and goods:</p>
 <ul>
-  <li>Contact information including name, email address, and professional affiliation</li>
-  <li>Information about your interest in space life sciences and biomedical research</li>
-  <li>Professional background and expertise relevant to our mission</li>
-  <li>Website usage data and analytics to improve user experience</li>
+  <li>Contact information including names</li>
+  <li>Information about lifestyle, interests or personal history (e.g., professional research focus, institutional affiliations)</li>
+  <li>We do not collect or process sensitive personal data unless explicitly provided with consent and we do not collect any special category data including health data</li>
+</ul>
+
+<p>We may collect the following types of information for service updates and marketing purposes:</p>
+<ul>
+  <li>Contact information including names</li>
+  <li>Records of consent, where appropriate</li>
+  <li>We will not use data collected for any other purposes without updating this policy, informing members, enabling them to opt out or regain consent where necessary</li>
 </ul>
 
 <!-- SECTION 2: How We Use Your Information -->
-<h3 id="how-we-use-your-information">🚀 How We Use Your Information</h3>
+<h3 id="how-we-use-your-information">How We Use Your Information</h3>
 <p>The information we collect is used to:</p>
 <ul>
   <li>Facilitate collaboration opportunities within the space life sciences community</li>
@@ -92,11 +99,13 @@ subtitle: Your Privacy Matters to Us
   confidentiality.
 </p>
 
-<!-- SECTION 5: Your Rights -->
-<h3 id="your-rights">⚖️ Your Rights</h3>
-<p>You have the right to:</p>
+<!-- SECTION 5: Lawful Bases and Your Data Protection Rights -->
+<h3 id="your-rights">Lawful Bases and Data Protection Rights</h3>
+<p>Under UK data protection law, we must have a “lawful basis” for collecting and using your personal information. There is a list of possible lawful bases in the UK GDPR. You can find out more about lawful bases on the ICO’s website.
+
+Which lawful basis we rely on may affect your data protection rights which are in brief set out below. You can find out more about your data protection rights and the exemptions which may apply on the ICO’s website:</p>
 <ul>
-  <li>Request access to your personal information</li>
+  <li><strong>Your right of access</strong> - You have the right to ask us for copies of your personal information. You can request other information such as details about where we get personal information from and who we share personal information with. There are some exemptions which means you may not receive all the information you ask for. [You can learn more about this right here]([https://example.com](https://app-ico-content-prod-uksouth.azurewebsites.net/for-organisations/advice-for-small-organisations/create-your-own-privacy-notice/your-data-protection-rights/#roa){:target="_blank" rel="noopener noreferrer"}</li>
   <li>Request correction of inaccurate information</li>
   <li>Request deletion of your personal information</li>
   <li>Opt-out of communications at any time</li>
