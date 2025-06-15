@@ -44,7 +44,8 @@
             <div class="nav-wrapper">
                 {% for item in site.data.pagelist.docs %}
                 <div class="nav-tab">
-                    <a href="{{ item.url | relative_url }}" class="nav-link">{{ item.title }}</a>
+                    <!-- <a href="{{ item.url | relative_url }}" class="nav-link">{{ item.title }}</a> -->
+                    <a href="{{ site.baseurl }}{{ item.url }}" class="nav-link">{{ item.title }}</a>
                 </div>
                 {% endfor %}
             </div>
