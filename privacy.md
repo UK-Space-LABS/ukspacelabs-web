@@ -74,6 +74,14 @@ subtitle: Your Privacy Matters to Us
   padding: 2rem 0;
 }
 
+.privacy-content h2 {
+  color: #def3fb !important; /* Brighter */
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  text-shadow: 0 0 15px rgba(74, 158, 255, 0.6);
+}
+
 .privacy-text {
   background: rgba(255, 255, 255, 0.05);
   padding: 2.5rem;
