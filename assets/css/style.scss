@@ -1151,6 +1151,57 @@ body {
 }
 
 /* Tahir Salahov Header */
+
+.salahov-header {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    min-height: 300px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.salahov-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.header-painting {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.header-overlay {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+}
+
+.site-title {
+    color: #4a9eff;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.site-subtitle {
+    color: #e6f3ff;
+    font-size: 1.2rem;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
 /*.salahov-header {
     position: relative;
     width: 100%;
@@ -1196,10 +1247,11 @@ body {
     z-index: 2;
 }*/
 
+/*
 .salahov-header {
     position: relative;
     width: 100%;
-    height: 50vh; /* Adjust this value as needed */
+    height: 50vh;
     min-height: 300px;
     overflow: hidden;
     display: flex;
@@ -1219,7 +1271,7 @@ body {
 .header-painting {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* This ensures the image covers the container while maintaining aspect ratio */
+    object-fit: cover;
     object-position: center;
 }
 
@@ -1232,9 +1284,10 @@ body {
     border-radius: 15px;
     backdrop-filter: blur(5px);
 }
-
+*/
 /* Responsive adjustments */
-@media (max-width: 768px) {
+
+/*@media (max-width: 768px) {
     .salahov-header {
         height: 40vh;
         min-height: 250px;
@@ -1251,7 +1304,7 @@ body {
         min-height: 200px;
     }
 }
-
+*/
 .main-logo-align {
     margin-bottom: 1rem;
 }
@@ -1262,7 +1315,7 @@ body {
     filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
     border-radius: 50%;
 }
-.site-title {
+/*.site-title {
     font-size: 3rem;
     font-weight: bold;
     background: linear-gradient(45deg, #4a9eff, #00d4ff, #ffffff, #4a9eff);
@@ -1282,7 +1335,8 @@ body {
     font-style: italic;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     font-weight: 300;
-}
+}*/
+
 
 /* Navigation */
 .main-navigation {
