@@ -9,8 +9,10 @@ subtitle: Your Privacy Matters to Us
 <!-- PRIVACY POLICY PAGE WITH TABLE OF CONTENTS                         -->
 <!-- =================================================================== -->
 <section class="privacy-content">
+  <div>
   <h2>UK Space LABS Customer Privacy Notice</h2>
   <a>This privacy notice tells you what to expect us to do with your personal information.</a>
+  </div>
   <!-- =============================================================== -->
   <!-- TABLE OF CONTENTS                                               -->
   <!-- =============================================================== -->
