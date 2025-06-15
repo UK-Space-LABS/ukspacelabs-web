@@ -1380,6 +1380,20 @@ body {
     text-shadow: 0 0 10px rgba(74, 158, 255, 0.8);
 }
 
+/* Nuclear option - override all navigation links */
+nav *,
+.main-navigation *,
+.nav-wrapper *,
+.nav-tab * {
+    color: #def3fb !important;
+}
+
+nav *:hover,
+.main-navigation *:hover,
+.nav-wrapper *:hover,
+.nav-tab *:hover {
+    color: #4a9eff !important;
+}
 /* Maintenance Page Styles */
 .maintenance-page {
     display: flex;
