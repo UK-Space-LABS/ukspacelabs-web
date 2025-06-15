@@ -188,8 +188,12 @@ executive_committee:
   margin-right: auto;
 }
 
-.core-members-section,
-.external-contacts-section {
+.core-members-section h2,
+.external-contacts-section h2,
+..executive-committee-section h2 {
+  color: #def3fb !important; /* Brighter */
+  text-shadow: 0 0 10px rgba(74, 158, 255, 0.5);
+  font-size: 2rem;
   margin: 4rem 0;
 }
 
