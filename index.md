@@ -119,7 +119,7 @@ partners:
   </div>
 </section>-->
 
-<section class="team-section" id="team">
+<!-- <section class="team-section" id="team">
   <h2>Our Team</h2>
   
   {% if site.chair %}
@@ -175,7 +175,7 @@ partners:
     </div>
   </div>
   {% endif %}
-</section>
+</section> -->
 
 {% endif %}
 
