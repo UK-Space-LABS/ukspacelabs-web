@@ -26,9 +26,9 @@ partners:
 {% else %}
 
 <section class="about-section" id="about">
-  <h2>About the Mission of UK Space LABS</h2>
+  <h2>Our Mission</h2>
   
-  <p>{{ site.about-author }} exists to optimise <strong>communication, cooperation and collaboration (C3)</strong> between UK based organisations and individuals and foreign entities involved in research, healthcare, commerce, education and outreach activities related to space life and biomedical sciences and the human element of human spaceflight.</p>
+  <p>{{ site.author }} exists to optimise <strong>communication, cooperation and collaboration (C3)</strong> between UK based organisations and individuals and foreign entities involved in research, healthcare, commerce, education and outreach activities related to space life and biomedical sciences and the human element of human spaceflight.</p>
   
   <p>The Association aims to enhance the practice, output and benefits of the Space Life and Biomedical Sciences field of endeavour in the UK and contribute to the development and translation of space science and services to terrestrial needs.</p>
   
