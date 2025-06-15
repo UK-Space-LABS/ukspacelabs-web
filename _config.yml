@@ -66,6 +66,9 @@ web_development:  [
 # Build settings
 
 markdown: kramdown # cmark-gfm # GFM # cmark-gfm # cmark
+kramdown:
+  auto_ids: true
+  toc_levels: 1..3
 theme: minima # Jekyll theme is overwritten by HTML
 future: true
 show_downloads: false
