@@ -1361,14 +1361,15 @@ body {
 }
 
 .nav-link {
-    color: #def3fb; /* #e6f3ff; */
+    color: #ffffff; /* #def3fb; #e6f3ff; */
     text-decoration: none;
     padding: 0.8rem 1.5rem;
     border-radius: 25px;
     transition: all 0.3s ease;
-    font-weight: 500;
+    font-weight: 600 !important; /* 500; */
     display: block;
     border: 1px solid transparent;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
 .nav-link:hover {
@@ -1376,6 +1377,7 @@ body {
     background: rgba(74, 158, 255, 0.1);
     border-color: rgba(74, 158, 255, 0.3);
     transform: translateY(-2px);
+    text-shadow: 0 0 10px rgba(74, 158, 255, 0.8);
 }
 
 /* Maintenance Page Styles */
@@ -2443,4 +2445,15 @@ body {
         height: 80vh;
         min-height: 400px;
     }
+}
+
+/* Team Page Header Fixes - Make section headers brighter */
+.core-members-section h2,
+.external-contacts-section h2,
+.executive-committee-section h2,
+.team-intro h2 {
+    color: #ffffff !important;
+    text-shadow: 0 0 15px rgba(74, 158, 255, 0.8);
+    font-size: 2.2rem;
+    font-weight: bold;
 }
