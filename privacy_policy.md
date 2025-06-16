@@ -153,8 +153,9 @@ Which lawful basis we rely on may affect your data protection rights which are i
 To make a data protection rights request, please contact us using the contact details at the bottom of this privacy notice.
 </p>
 <br></br>
-<p><strong>Our lawful bases for the collection and use of your data</strong></p>
-<br></br>
+<p><strong>Lawful bases for the collection and use of your data</strong></p>
+
+
 <p>Our lawful bases for collecting or using personal information <strong>to provide services and goods, including delivery and third party referrals</strong> are:
 
 1. <strong>Consent</strong> - we have permission from you after we gave you all the relevant information. All of your data protection rights may apply, except the right to object. To be clear, you do have the right to withdraw your consent at any time.
