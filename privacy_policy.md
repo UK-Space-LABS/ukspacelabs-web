@@ -2,6 +2,9 @@
 layout: default
 title: Privacy Policy
 subtitle: Your Privacy Matters to Us
+date_last_updated: "2025-04-01"     # When policy was last updated
+date_effective: "2025-06-01"        # When policy became effective
+version: "2.1"                      # Policy version number
 ---
 
 
@@ -23,7 +26,13 @@ subtitle: Your Privacy Matters to Us
         <a href="#information-we-collect">The Information We Collect</a>
       </li>
       <li>
+        <a href="#source-of-personal-information">Where We Get Personal Information From?</a>
+      </li>
+      <li>
         <a href="#how-we-use-your-information">How We Use Your Information and for What Purpose</a>
+      </li>
+      <li>
+        <a href="#how-long-we-keep-your-information">For How Long We Keep Your Information?</a>
       </li>
       <li>
         <a href="#data-protection-and-security">Data Protection and Security</a>
@@ -32,7 +41,7 @@ subtitle: Your Privacy Matters to Us
         <a href="#information-sharing">Information Sharing</a>
       </li>
       <li>
-        <a href="#your-rights">Your Rights</a>
+        <a href="#your-rights">Lawful Bases and Data Protection Rights</a>
       </li>
       <li>
         <a href="#cookies-and-website-analytics">Cookies and Website Analytics</a>
@@ -43,6 +52,9 @@ subtitle: Your Privacy Matters to Us
       <li>
         <a href="#contact-us">Contact Us</a>
       </li>
+      <li>
+        <a href="#raise-a-concern">How to Raise a Concern?</a>
+      </li>
     </ol>
   </div>
   <!-- =============================================================== -->
@@ -50,7 +62,7 @@ subtitle: Your Privacy Matters to Us
   <!-- =============================================================== -->
   <div class="privacy-text">
 
-  <!-- SECTION 1: What Information We Collect and Why -->
+<!-- SECTION 1: What Information We Collect and Why -->
 <h3 id="information-we-collect">The Information We Collect</h3>
 <p>
   UK Space LABS is committed to protecting your privacy and personal information. 
@@ -72,7 +84,13 @@ subtitle: Your Privacy Matters to Us
   <li>We will not use data collected for any other purposes without updating this policy, informing members, enabling them to opt out or regain consent where necessary</li>
 </ul>
 
-<!-- SECTION 2: How We Use Your Information -->
+<!-- SECTION 2: Where we get personal information from? -->
+<h3 id="source-of-personal-information">Where We Get Personal Information From?</h3>
+<p>
+  Directly from you.
+</p>
+
+<!-- SECTION 3: How We Use Your Information -->
 <h3 id="how-we-use-your-information">How We Use Your Information</h3>
 <p>The information we collect is used to:</p>
 <ul>
@@ -83,7 +101,13 @@ subtitle: Your Privacy Matters to Us
   <li>Organize conferences, workshops, and networking events</li>
 </ul>
 
-<!-- SECTION 3: Data Protection and Security -->
+<!-- SECTION 4: How long we store personal information? -->
+<h3 id=how-long-we-keep-your-information">For How Long We Keep Your Information?</h3>
+<p>
+ We will retain data for as long as UK Space Life and Biomedical Sciences Association continues to operate in its current form and the member remains active, or until they request deletion. If you wish to have your information deleted, please email us on: <strong> ukspacelabsengagement@gmail.com </strong>.
+</p>
+
+<!-- SECTION 5: Data Protection and Security -->
 <h3 id="data-protection-and-security">Data Protection and Security</h3>
 <p>
   We implement appropriate security measures to protect your personal information 
@@ -91,7 +115,7 @@ subtitle: Your Privacy Matters to Us
   information is stored securely and access is limited to authorized personnel only.
 </p>
 
-<!-- SECTION 4: Information Sharing -->
+<!-- SECTION 6: Information Sharing -->
 <h3 id="information-sharing">Information Sharing</h3>
 <p>
   We do not sell, trade, or otherwise transfer your personal information to 
@@ -99,29 +123,67 @@ subtitle: Your Privacy Matters to Us
   We may share information with trusted partners who assist us in operating 
   our website or conducting our activities, provided they agree to maintain 
   confidentiality.
+
+<strong>Data processors</strong>
+
+GitHub
+
+This data processor does the following activities for us: they host our website.
+
+Some data may be stored or processed outside the UK with GitHub. Where this occurs, we ensure appropriate safeguards are in place, in line with UK GDPR. GitHub has a compliant privacy statement available <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">here</a>.
+
 </p>
 
-<!-- SECTION 5: Lawful Bases and Your Data Protection Rights -->
+<!-- SECTION 7: Lawful Bases and Your Data Protection Rights -->
 <h3 id="your-rights">Lawful Bases and Data Protection Rights</h3>
 <p>Under UK data protection law, we must have a “lawful basis” for collecting and using your personal information. There is a list of possible lawful bases in the UK GDPR. You can find out more about lawful bases on the ICO’s website.
 
 Which lawful basis we rely on may affect your data protection rights which are in brief set out below. You can find out more about your data protection rights and the exemptions which may apply on the ICO’s website:</p>
 <ul>
-  <li><strong>Your right of access</strong> - You have the right to ask us for copies of your personal information. You can request other information such as details about where we get personal information from and who we share personal information with. There are some exemptions which means you may not receive all the information you ask for. You can learn more about this right <a href="https://app-ico-content-prod-uksouth.azurewebsites.net/for-organisations/advice-for-small-organisations/create-your-own-privacy-notice/your-data-protection-rights/#roa" target="_blank" rel="noopener noreferrer">here</a></li>
-  <li>Request correction of inaccurate information</li>
-  <li>Request deletion of your personal information</li>
-  <li>Opt-out of communications at any time</li>
-  <li>Request data portability where applicable</li>
+  <li><strong>Your right of access</strong> - You have the right to ask us for copies of your personal information. You can request other information such as details about where we get personal information from and who we share personal information with. There are some exemptions which means you may not receive all the information you ask for. You can learn more about this right <a href="https://app-ico-content-prod-uksouth.azurewebsites.net/for-organisations/advice-for-small-organisations/create-your-own-privacy-notice/your-data-protection-rights/#roa" target="_blank" rel="noopener noreferrer">here</a>.</li>
+  <li><strong>Your right to rectification</strong> - You have the right to ask us to correct or delete personal information you think is inaccurate or incomplete. You can learn more about this right <a href="https://app-ico-content-prod-uksouth.azurewebsites.net/for-organisations/advice-for-small-organisations/create-your-own-privacy-notice/your-data-protection-rights/#rtr" target="_blank" rel="noopener noreferrer">here</a>.</li>
+  <li><strong>Your right to erasure</strong> - You have the right to ask us to delete your personal information. You can read more about this right <a href="https://app-ico-content-prod-uksouth.azurewebsites.net/for-organisations/advice-for-small-organisations/create-your-own-privacy-notice/your-data-protection-rights/#rte" target="_blank" rel="noopener noreferrer">here</a>.</li>
+  <li><strong>Your right to restriction of processing</strong> - You have the right to ask us to limit how we can use your personal information. You can learn more about this right <a href="https://app-ico-content-prod-uksouth.azurewebsites.net/for-organisations/advice-for-small-organisations/create-your-own-privacy-notice/your-data-protection-rights/#rtrop" target="_blank" rel="noopener noreferrer">here</a>.</li>
+  <li><strong>Your right to object to processing</strong> - You have the right to object to the processing of your personal data. You can read more about this right <a href="https://app-ico-content-prod-uksouth.azurewebsites.net/for-organisations/advice-for-small-organisations/create-your-own-privacy-notice/your-data-protection-rights/#rto" target="_blank" rel="noopener noreferrer">here</a>.</li>
+  <li><strong>Your right to data portability</strong> - You have the right to ask that we transfer the personal information you gave us to another organisation, or to you. You can learn more about this right <a href="https://app-ico-content-prod-uksouth.azurewebsites.net/for-organisations/advice-for-small-organisations/create-your-own-privacy-notice/your-data-protection-rights/#rtdp" target="_blank" rel="noopener noreferrer">here</a>.</li>
+  <li><strong>Your right to withdraw consent</strong> – When we use consent as our lawful basis you have the right to withdraw your consent at any time. You can learn more about this right <a href="https://app-ico-content-prod-uksouth.azurewebsites.net/for-organisations/advice-for-small-organisations/create-your-own-privacy-notice/your-data-protection-rights/#rtwc" target="_blank" rel="noopener noreferrer">here</a>. </li>
+</ul>
+<p>If you make a request, we must respond to you without undue delay and in any event within one month.
+  
+To make a data protection rights request, please contact us using the contact details at the bottom of this privacy notice.
+</p>
+<a><strong>Our lawful bases for the collection and use of your data</strong></a>
+
+<p>Our lawful bases for collecting or using personal information <strong>to provide services and goods, including delivery and third party referrals</strong> are:
+
+1. <strong>Consent</strong> - we have permission from you after we gave you all the relevant information. All of your data protection rights may apply, except the right to object. To be clear, you do have the right to withdraw your consent at any time.
+
+2. <strong>Legitimate interests</strong> – we’re collecting or using your information because it benefits you, our organisation or someone else, without causing an undue risk of harm to anyone. All of your data protection rights may apply, except the right to portability. Our legitimate interests are:
+</p>
+<ul>
+  <li>o	We collect this personal information to enable the creation of a database, which will allow our membership to develop beneficial collaborations within this specific community. The benefits outweigh the risks as the data we collect i.e., name, email and research interests are already available within the public domain (i.e., within University or other institutional public webpages).</li>
+  <li>Additionally, the database that will be formed will enable members to access information far easier than what they would ordinarily be able to do. We see no risk or negative impact on anyone involved as this data will not be shared beyond the membership.</li>
 </ul>
 
-<!-- SECTION 6: Cookies and Website Analytics -->
+<p>Our lawful bases for collecting or using personal information for <strong>service updates or marketing purposes</strong> are:
+
+1. <strong>Consent</strong> - we have permission from you after we gave you all the relevant information. All of your data protection rights may apply, except the right to object. To be clear, you do have the right to withdraw your consent at any time.
+
+2. <strong>Legitimate interests</strong> – we’re collecting or using your information because it benefits you, our organisation or someone else, without causing an undue risk of harm to anyone. All of your data protection rights may apply, except the right to portability. Our legitimate interests are:
+</p>
+<ul>
+  <li>We collect this personal information to enable the dissemination of a regular newsletter, containing information and opportunities relevant for this specific community. The benefits outweigh the risks as the data we collect i.e., name, email and research interests are already available within the public domain (i.e., within University or other institutional public webpages).</li>
+  <li>We see no risk or negative impact on anyone involved as a) recipients of the newsletter is not exposed to the personal details of any other recipient and b) this data is managed by a GDPR-compliant mailing system (Mailchimp).</li>
+</ul>
+
+<!-- SECTION 8: Cookies and Website Analytics -->
 <h3 id="cookies-and-website-analytics">Cookies and Website Analytics</h3>
 <p>
   Our website may use cookies to enhance user experience and collect anonymous 
   usage statistics. You can control cookie settings through your browser preferences.
 </p>
 
-<!-- SECTION 7: Changes to This Policy -->
+<!-- SECTION 9: Changes to This Policy -->
 <h3 id="changes-to-this-policy">Changes to This Policy</h3>
 <p>
   We may update this privacy policy from time to time. Any changes will be 
@@ -129,7 +191,7 @@ Which lawful basis we rely on may affect your data protection rights which are i
   review this policy periodically.
 </p>
 
-<!-- SECTION 8: Contact Us -->
+<!-- SECTION 10: Contact Us -->
 <h3 id="contact-us">📧 Contact Us</h3>
 <p>
   If you have any questions about this privacy policy or how we handle your 
@@ -140,9 +202,30 @@ Which lawful basis we rely on may affect your data protection rights which are i
   <a href="mailto:ukspacelabsengagement@gmail.com">ukspacelabsengagement@gmail.com</a>
 </p>
 
+<!-- SECTION 11: Contact Us -->
+<h3 id="raise-a-concern">How to Raise a Concern?</h3>
+<p>
+  If you have any concerns about our use of your personal data, you can make a complaint to us using the contact details at the top of this privacy notice.
+
+  If you remain unhappy with how we’ve used your data after raising a complaint with us, you can also complain to the ICO.
+
+  The ICO’s address:
+  
+    Information Commissioner’s Office
+    Wycliffe House
+    Water Lane
+    Wilmslow
+    Cheshire
+    SK9 5AF
+    
+    Helpline number: 0303 123 1113
+    Website: https://www.ico.org.uk/make-a-complaint
+</p>
+
 <!-- Last Updated -->
 <p>
-  <em>Last updated: {{ 'now' | date: '%B %d, %Y' }}</em>
+  <!--<em>Last updated: {{ 'now' | date: '%B %d, %Y' }}</em>-->
+  <em>Last updated: {{ page.date_last_updated | date: '%B %d, %Y' }}</em>
 </p>
 
 </div>
