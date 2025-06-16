@@ -194,7 +194,7 @@ To make a data protection rights request, please contact us using the contact de
 </p>
 
 <!-- SECTION 10: Contact Us -->
-<h3 id="contact-us">📧 Contact Us</h3>
+<h3 id="contact-us">Contact Us</h3>
 <p>
   If you have any questions about this privacy policy or how we handle your 
   personal information, please contact us at:
