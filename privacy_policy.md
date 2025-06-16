@@ -152,7 +152,7 @@ Which lawful basis we rely on may affect your data protection rights which are i
   
 To make a data protection rights request, please contact us using the contact details at the bottom of this privacy notice.
 </p>
-<a><strong>Our lawful bases for the collection and use of your data</strong></a>
+<p><strong>Our lawful bases for the collection and use of your data</strong></p>
 
 <p>Our lawful bases for collecting or using personal information <strong>to provide services and goods, including delivery and third party referrals</strong> are:
 
@@ -161,7 +161,7 @@ To make a data protection rights request, please contact us using the contact de
 2. <strong>Legitimate interests</strong> – we’re collecting or using your information because it benefits you, our organisation or someone else, without causing an undue risk of harm to anyone. All of your data protection rights may apply, except the right to portability. Our legitimate interests are:
 </p>
 <ul>
-  <li>o	We collect this personal information to enable the creation of a database, which will allow our membership to develop beneficial collaborations within this specific community. The benefits outweigh the risks as the data we collect i.e., name, email and research interests are already available within the public domain (i.e., within University or other institutional public webpages).</li>
+  <li>We collect this personal information to enable the creation of a database, which will allow our membership to develop beneficial collaborations within this specific community. The benefits outweigh the risks as the data we collect i.e., name, email and research interests are already available within the public domain (i.e., within University or other institutional public webpages).</li>
   <li>Additionally, the database that will be formed will enable members to access information far easier than what they would ordinarily be able to do. We see no risk or negative impact on anyone involved as this data will not be shared beyond the membership.</li>
 </ul>
 
@@ -223,10 +223,12 @@ To make a data protection rights request, please contact us using the contact de
 </p>
 
 <!-- Last Updated -->
-<p>
-  <!--<em>Last updated: {{ 'now' | date: '%B %d, %Y' }}</em>-->
-  <em>Last updated: {{ page.date_last_updated | date: '%B %d, %Y' }}</em>
-</p>
+<div class="last-updated">
+  <p>
+    <!--<em>Last updated: {{ 'now' | date: '%B %d, %Y' }}</em>-->
+    <em>Last updated: {{ page.date_last_updated | date: '%B %d, %Y' }}</em>
+  </p>
+</div>
 
 </div>
 </section>
@@ -349,6 +351,11 @@ To make a data protection rights request, please contact us using the contact de
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   line-height: 1.7;
+}
+
+/* Right-align only the last updated line */
+.privacy-text .last-updated {
+  text-align: right !important;
 }
 
 /* Section headers */
