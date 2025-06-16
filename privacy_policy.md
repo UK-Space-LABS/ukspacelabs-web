@@ -102,9 +102,8 @@ version: "2.1"                      # Policy version number
 </ul>
 
 <!-- SECTION 4: How long we store personal information? -->
-<h3 id=how-long-we-keep-your-information">For How Long We Keep Your Information?</h3>
-<p>
- We will retain data for as long as UK Space Life and Biomedical Sciences Association continues to operate in its current form and the member remains active, or until they request deletion. If you wish to have your information deleted, please email us on: <strong> ukspacelabsengagement@gmail.com </strong>.
+<h3 id="how-long-we-keep-your-information">For How Long We Keep Your Information?</h3>
+<p>We will retain data for as long as UK Space Life and Biomedical Sciences Association continues to operate in its current form and the member remains active, or until they request deletion. If you wish to have your information deleted, please email us on: <strong> ukspacelabsengagement@gmail.com </strong>.
 </p>
 
 <!-- SECTION 5: Data Protection and Security -->
