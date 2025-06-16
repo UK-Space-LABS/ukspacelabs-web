@@ -152,7 +152,8 @@ Which lawful basis we rely on may affect your data protection rights which are i
   
 To make a data protection rights request, please contact us using the contact details at the bottom of this privacy notice.
 </p>
-<br></br>
+
+
 <p><strong>Lawful bases for the collection and use of your data</strong></p>
 
 
