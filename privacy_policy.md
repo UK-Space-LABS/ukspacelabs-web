@@ -213,17 +213,37 @@ To make a data protection rights request, please contact us using the contact de
   If you remain unhappy with how we’ve used your data after raising a complaint with us, you can also complain to the ICO.
 
   The ICO’s address:
-  
-    Information Commissioner’s Office
-    Wycliffe House
-    Water Lane
-    Wilmslow
-    Cheshire
-    SK9 5AF
-    
-    Helpline number: 0303 123 1113
-    Website: https://www.ico.org.uk/make-a-complaint
 </p>
+
+<div class="contact-block">
+  <h4>Information Commissioner's Office</h4>
+  <div class="address-block">
+    <div class="address">
+      <p>Wycliffe House</p>
+      <p>Water Lane</p>
+      <p>Wilmslow</p>
+      <p>Cheshire</p>
+      <p>SK9 5AF</p>
+    </div>
+    
+    <div class="contact-details">
+      <p>
+        <strong>Helpline:</strong> 
+        <a href="tel:+443031231113" class="phone-link">0303 123 1113</a>
+      </p>
+      <p>
+        <strong>Website:</strong> 
+        <a href="https://www.ico.org.uk/make-a-complaint" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="external-link">
+          ico.org.uk/make-a-complaint
+          <i class="fa fa-external-link" aria-hidden="true"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
 
 <!-- Last Updated -->
 <div class="last-updated">
@@ -344,6 +364,285 @@ To make a data protection rights request, please contact us using the contact de
   text-shadow: 0 0 10px rgba(74, 158, 255, 0.8);
   transform: translateX(5px);               /* Subtle slide effect */
 }
+
+/* =================================================================== */
+/* CONTACT BLOCK STYLING                                              */
+/* =================================================================== */
+
+/* Contact block container */
+.contact-block {
+  background: rgba(255, 255, 255, 0.08);
+  border-left: 4px solid #4a9eff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 4px 15px rgba(74, 158, 255, 0.1);
+}
+
+/* Contact block header */
+.contact-block h4 {
+  color: #4a9eff !important;
+  margin: 0 0 1rem 0 !important;
+  font-size: 1.2rem !important;
+  font-weight: 600;
+  text-shadow: 0 0 8px rgba(74, 158, 255, 0.5);
+  border-bottom: 1px solid rgba(74, 158, 255, 0.3);
+  padding-bottom: 0.5rem;
+}
+
+/* Address block container */
+.address-block {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Address section */
+.address {
+  flex: 1;
+  min-width: 200px;
+}
+
+.address p {
+  color: #e6f3ff !important;
+  margin: 0.3rem 0 !important;
+  line-height: 1.4;
+  font-size: 0.95rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.address p:first-child {
+  font-weight: 600;
+  color: #87ceeb !important;
+}
+
+.address p::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  width: 0.3rem;
+  height: 0.3rem;
+  background: #00d4ff;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+.address p:first-child::before {
+  background: #4a9eff;
+  width: 0.4rem;
+  height: 0.4rem;
+}
+
+/* Contact details section */
+.contact-details {
+  flex: 1;
+  min-width: 250px;
+}
+
+.contact-details p {
+  color: #e6f3ff !important;
+  margin: 0.8rem 0 !important;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.contact-details strong {
+  color: #4a9eff;
+  white-space: nowrap;
+  min-width: 80px;
+}
+
+/* Phone link styling */
+.phone-link {
+  color: #00d4ff !important;
+  text-decoration: none;
+  background: rgba(0, 212, 255, 0.1);
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 212, 255, 0.3);
+  transition: all 0.3s ease;
+  font-family: monospace;
+  font-weight: 600;
+}
+
+.phone-link:hover {
+  background: rgba(0, 212, 255, 0.2);
+  border-color: rgba(0, 212, 255, 0.5);
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
+/* =================================================================== */
+/* RESPONSIVE DESIGN FOR CONTACT BLOCKS                               */
+/* =================================================================== */
+@media (max-width: 768px) {
+  .address-block {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .contact-details p {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+  }
+  
+  .contact-details strong {
+    min-width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-block {
+    padding: 1rem;
+  }
+  
+  .address p {
+    padding-left: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .phone-link {
+    font-size: 0.9rem;
+  }
+}
+
+/* External links with icon */
+.external-link {
+  color: #00d4ff !important;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.external-link:hover {
+  color: #4a9eff !important;
+  border-bottom-color: rgba(74, 158, 255, 0.5);
+  text-shadow: 0 0 8px rgba(74, 158, 255, 0.6);
+  transform: translateY(-1px);
+}
+
+.external-link i {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.external-link:hover i {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Email links */
+.email-link {
+  color: #00d4ff !important;
+  text-decoration: none;
+  background: rgba(0, 212, 255, 0.1);
+  padding: 0.3rem 0.6rem;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 212, 255, 0.3);
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.email-link:hover {
+  background: rgba(0, 212, 255, 0.2);
+  border-color: rgba(0, 212, 255, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+}
+
+/* Contact info section */
+.contact-info {
+  background: rgba(74, 158, 255, 0.1);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border: 1px solid rgba(74, 158, 255, 0.3);
+}
+
+.contact-info p {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-info p:last-child {
+  margin-bottom: 0;
+}
+
+/* Policy metadata styling */
+.policy-metadata {
+  background: rgba(74, 158, 255, 0.1);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 2rem 0 1rem 0;
+  border: 1px solid rgba(74, 158, 255, 0.3);
+  text-align: center;
+}
+
+.policy-metadata p {
+  margin-bottom: 0.8rem;
+  color: #e6f3ff !important;
+  font-size: 0.95rem;
+}
+
+.policy-metadata p:last-child {
+  margin-bottom: 0;
+}
+
+.policy-metadata strong {
+  color: #4a9eff;
+  text-shadow: 0 0 5px rgba(74, 158, 255, 0.5);
+}
+
+.policy-metadata em {
+  color: #00d4ff;
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* Right-aligned last updated */
+.last-updated-right {
+  text-align: right;
+  color: #87ceeb !important;
+  font-size: 0.9rem;
+  margin: 1rem 0 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(74, 158, 255, 0.2);
+}
+
+.last-updated-right strong {
+  color: #4a9eff;
+  text-shadow: 0 0 5px rgba(74, 158, 255, 0.5);
+}
+
+.last-updated-right em {
+  color: #00d4ff;
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* Legacy last-updated class (remove if not needed elsewhere) */
+.last-updated {
+  text-align: center;
+  font-style: italic;
+  color: #87ceeb !important;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(74, 158, 255, 0.2);
+}
+
+/* 
 
 /* =================================================================== */
 /* PRIVACY POLICY CONTENT STYLING                                     */
