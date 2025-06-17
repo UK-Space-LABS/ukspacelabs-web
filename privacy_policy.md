@@ -214,7 +214,7 @@ To make a data protection rights request, please contact us using the contact de
   The ICO’s address:
 </p>
 
-<div class="contact-block">
+<!--<div class="contact-block">
   <h4>Information Commissioner's Office</h4>
   <div class="address-block">
     <div class="address">
@@ -223,6 +223,19 @@ To make a data protection rights request, please contact us using the contact de
       Wilmslow
       Cheshire
       SK9 5AF</p>
+    </div>-->
+
+<div class="contact-block">
+  <h4>Information Commissioner's Office</h4>
+  <div class="address-block">
+    <div class="address">
+      <div class="address-lines">
+        Wycliffe House<br>
+        Water Lane<br>
+        Wilmslow<br>
+        Cheshire<br>
+        SK9 5AF
+      </div>
     </div>
     
     <div class="contact-details">
