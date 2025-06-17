@@ -429,7 +429,7 @@ To make a data protection rights request, please contact us using the contact de
   font-weight: 600;
   color: #87ceeb !important;
 }
-
+/*
 .address p::before {
   content: '';
   position: absolute;
@@ -446,7 +446,7 @@ To make a data protection rights request, please contact us using the contact de
   background: #4a9eff;
   width: 0.4rem;
   height: 0.4rem;
-}
+}*/
 
 /* Contact details section */
 .contact-details {
