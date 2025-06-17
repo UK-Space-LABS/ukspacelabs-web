@@ -537,7 +537,7 @@ To make a data protection rights request, please contact us using the contact de
 
 .external-link:hover {
   color: #4a9eff !important;
-  border-bottom-color: rgba(74, 158, 255, 0.5);
+  /*border-bottom-color: rgba(74, 158, 255, 0.5);*/
   text-shadow: 0 0 8px rgba(74, 158, 255, 0.6);
   transform: translateY(-1px);
 }
