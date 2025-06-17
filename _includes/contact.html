@@ -1,8 +1,40 @@
 <section class="contact space-contact">
     <h3 class="contact-title"><i class="fa fa-rocket" aria-hidden="true"></i> Contact us</h3>
     <br>
-    
+
     <div class="contact-grid">
+        <div class="contact-item">
+            <div class="contact-icon">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+            </div>
+            <p>For collaboration, partnerships, and general inquiries:</p>
+            {% if site.social-email %}
+                <a href="mailto:{{ site.social-email }}" class="contact-link">
+                    {{ site.social-email }}
+                </a>
+            {% else %}
+                <a href="mailto:ukspacelabsengagement@gmail.com" class="contact-link">
+                    ukspacelabsengagement@gmail.com
+                </a>
+            {% endif %}
+        </div>
+        
+        <div class="contact-item">
+            <div class="contact-icon">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </div>
+            <p>Join our professional community:</p>
+            {% if site.social-linkedin %}
+                <a href="https://www.linkedin.com/groups/{{ site.social-linkedin }}/" target="_blank" class="contact-link">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i> UK Space LABS Group
+                </a>
+            {% else %}
+                <a href="https://www.linkedin.com/groups/13616507/" target="_blank" class="contact-link">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i> UK Space LABS Group
+                </a>
+            {% endif %}
+        </div>
+  <!--  <div class="contact-grid">
         <div class="contact-item">
             <div class="contact-icon">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -35,7 +67,7 @@
                     <i class="fa fa-linkedin" aria-hidden="true"></i> UK Space LABS Group
                 </a>
             {% endif %}
-        </div>
+        </div>-->
         
         <!--<div class="contact-item">
             <div class="contact-icon">
@@ -117,6 +149,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
+    padding: 0 2rem;
     margin: 2rem 0;
 }
 
@@ -126,6 +159,7 @@
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease;
+    text-align: center;
 }
 
 .contact-item:hover {
@@ -244,6 +278,7 @@
     .contact-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+        padding: 0 1rem;
     }
     
     .contact-item {
