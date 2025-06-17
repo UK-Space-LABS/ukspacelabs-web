@@ -218,11 +218,11 @@ To make a data protection rights request, please contact us using the contact de
   <h4>Information Commissioner's Office</h4>
   <div class="address-block">
     <div class="address">
-      <p>Wycliffe House</p>
-      <p>Water Lane</p>
-      <p>Wilmslow</p>
-      <p>Cheshire</p>
-      <p>SK9 5AF</p>
+      <p>Wycliffe House
+      Water Lane
+      Wilmslow
+      Cheshire
+      SK9 5AF</p>
     </div>
     
     <div class="contact-details">
