@@ -3,5 +3,5 @@ docs:
     url: "/"
   - title: "Meet the Team"
     url: "/team"
-  - title: "Privacy Policy"
-    url: "/privacy_policy"
+  # - title: "Privacy Policy"
+  #  url: "/privacy_policy"
