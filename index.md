@@ -21,6 +21,7 @@ partners:
 ---
 
 
+
 <!-- under_construction parameter set to 'true' in the _config.yaml -->
 {% if site.under_construction %}
 <!-- Maintenance mode is handled in the main_page layout -->
@@ -29,11 +30,11 @@ partners:
 <section class="about-section" id="about">
   <h2>Our Mission</h2>
   
-  <p>{{ site.title }} brings together people and organisations across the UK and beyond who are engaged in space life and biomedical sciences. By encouraging communication, cooperation and collaboration (C3), the Association supports research, healthcare, education, outreach and commercial activities linked to the human aspects of spaceflight.</p>
+  <p>{{ page.title }} brings together people and organisations across the UK and beyond who are engaged in space life and biomedical sciences. By encouraging communication, cooperation and collaboration (C3), the Association supports research, healthcare, education, outreach and commercial activities linked to the human aspects of spaceflight.</p>
   
   <p>Our goal is to strengthen the UK’s contributions to this growing field, help translate space-based knowledge and technologies to benefit life on Earth, and support wider global human spaceflight efforts.</p>
   
-  <p>{{ site.title }} is also committed to creating opportunities for students and professionals to learn, grow and build careers in this domain, while advocating for UK participation in human spaceflight as a driver of academic, scientific, industrial and economic progress.</p>
+  <p>{{ page.title }} is also committed to creating opportunities for students and professionals to learn, grow and build careers in this domain, while advocating for UK participation in human spaceflight as a driver of academic, scientific, industrial and economic progress.</p>
   
   <p>The Association supports the development of shared approaches to space biomedicine education worldwide, to help advance this important and multidisciplinary area of science.</p>
 </section>
