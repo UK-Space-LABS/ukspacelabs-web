@@ -1,7 +1,7 @@
 ---
 layout: default
 theme: Home
-title: UK-Space-LABS
+title: "UK Space LABS"
 logo: ![UK-Space-LABS logo](images/Space_Logo_col_dEC_14.jpg)
 subtitle: Welcome - The UK Space Life and Biomedical Sciences Association
 
@@ -29,13 +29,13 @@ partners:
 <section class="about-section" id="about">
   <h2>Our Mission</h2>
   
-  <p>{{ page.title }} exists to optimise <strong>communication, cooperation and collaboration (C3)</strong> between UK based organisations and individuals and foreign entities involved in research, healthcare, commerce, education and outreach activities related to space life and biomedical sciences and the human element of human spaceflight.</p>
+  <p>{{ page.title }} brings together people and organisations across the UK and beyond who are engaged in space life and biomedical sciences. By encouraging communication, cooperation and collaboration (C3), the Association supports research, healthcare, education, outreach and commercial activities linked to the human aspects of spaceflight.</p>
   
-  <p>The Association aims to enhance the practice, output and benefits of the Space Life and Biomedical Sciences field of endeavour in the UK and contribute to the development and translation of space science and services to terrestrial needs.</p>
+  <p>Our goal is to strengthen the UK’s contributions to this growing field, help translate space-based knowledge and technologies to benefit life on Earth, and support wider global human spaceflight efforts.</p>
   
-  <p>Furthermore, UK Space LABS aims to create educational, research and career opportunities for students and professionals of the UK who are interested in space life and biomedical sciences and shall promote UK involvement in human spaceflight as a means of enhancing and strengthening the academic, scientific, industrial and economic foundations of the UK.</p>
+  <p>{{ page.title }} is also committed to creating opportunities for students and professionals to learn, grow and build careers in this domain, while advocating for UK participation in human spaceflight as a driver of academic, scientific, industrial and economic progress.</p>
   
-  <p>UK Space LABS will also promote the establishment of harmonised space biomedicine education globally and to propel the progression of this multidisciplinary field.</p>
+  <p>The Association supports the development of shared approaches to space biomedicine education worldwide, to help advance this important and multidisciplinary area of science.</p>
 </section>
 
 <!-- Partners Section -->
