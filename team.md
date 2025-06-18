@@ -111,7 +111,7 @@ executive_committee:
 <section class="team-intro">
   <h2>Meet Our Team</h2>
   <p class="team-description">
-    UK Space LABS brings together leading experts from across the space life sciences community. Our diverse team combines decades of experience in space medicine, biomedical research, education, and industry collaboration to advance the field of space biomedicine in the UK and internationally.
+    UK Space LABS brings together a diverse team of seasoned experts, early career professionals and students from across the space life sciences community and aligned sectors. Our diverse team combines decades of experience in space medicine, biomedical research, education, and industry collaboration to advance the field of space biomedicine in the UK and internationally.
   </p>
 </section>
 
