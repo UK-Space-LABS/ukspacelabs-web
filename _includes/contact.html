@@ -30,7 +30,7 @@
                 </a>
             {% else %}
                 <a href="https://www.linkedin.com/groups/13616507/" target="_blank" class="contact-link">
-                    <i class="fa fa-linkedin" aria-hidden="true"></i> UK Space LABS Group
+                    <i class="fa fa-linkedin" aria-hidden="false"></i> UK Space LABS Group
                 </a>
             {% endif %}
         </div>
@@ -201,7 +201,7 @@
 }
 
 .contact-link {
-    color: #00d4ff;
+    color: #4a9eff; /* #00d4ff; */
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
@@ -217,6 +217,10 @@
     background: rgba(0, 212, 255, 0.2);
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 212, 255, 0.3);
+}
+
+.contact-link i {
+    color: inherit;
 }
 
 .contact-social-list ul {
