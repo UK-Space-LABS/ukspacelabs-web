@@ -90,7 +90,7 @@ partners:
 </section>
 -->
 
-<section class="partners-section">
+<!--<section class="partners-section">
   <h2>Partners, Collaborators and Affiliated Organisations</h2>
   <div class="partners-grid">
     {% for partner in page.partners %}
@@ -108,6 +108,55 @@ partners:
     {% endfor %}
   </div>
 </section>
+-->
+
+<section class="partners-section">
+  <h2>Partners, Collaborators and Affiliated Organisations</h2>
+  <div class="partners-grid">
+    
+    <div class="partner-item">
+      <a href="https://www.gov.uk/government/organisations/uk-space-agency" target="_blank">
+        <div class="partner-logo-container">
+          <img src="/ukspacelabs-web/images/partners/uk-space-agency-logo_500x500.png" 
+               alt="UK Space Agency" 
+               class="partner-logo-img">
+        </div>
+      </a>
+    </div>
+    
+    <div class="partner-item">
+      <a href="https://www.aerosociety.com/" target="_blank">
+        <div class="partner-logo-container">
+          <img src="/ukspacelabs-web/images/partners/royal-aeronautical-society-logo-300x300.jpg" 
+               alt="Royal Aeronautical Society" 
+               class="partner-logo-img">
+        </div>
+      </a>
+    </div>
+    
+    <div class="partner-item">
+      <a href="https://www.asma.org/" target="_blank">
+        <div class="partner-logo-container">
+          <img src="/ukspacelabs-web/images/partners/aerospace_medical_association_logo_612x612.jpg" 
+               alt="Aerospace Medical Association" 
+               class="partner-logo-img">
+        </div>
+      </a>
+    </div>
+    
+    <div class="partner-item">
+      <a href="https://www.blueabyss.uk/" target="_blank">
+        <div class="partner-logo-container">
+          <img src="/ukspacelabs-web/images/partners/BA_logo_1920x869.jpg" 
+               alt="Blue Abyss Ltd" 
+               class="partner-logo-img">
+        </div>
+      </a>
+    </div>
+    
+  </div>
+</section>
+
 
 <!--<section class="content-section" id="mission">
   <h2>Our Partners</h2>
