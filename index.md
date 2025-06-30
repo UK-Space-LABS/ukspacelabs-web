@@ -9,7 +9,7 @@ partners:
 - name: "UK Space Agency (UKSA)"
   logo_path: "images/partners/uk-space-agency-logo_500x500.png"
   ref_url: "https://www.gov.uk/government/organisations/uk-space-agency"
-- name: "Royal Aeronautical Society (RAeS)"
+- name: "Royal Aeronautical Society (RAeS)"  
   logo_path: "images/partners/royal-aeronautical-society-logo-300x300.jpg"
   ref_url: "https://www.aerosociety.com/"
 - name: "Aerospace Medical Association (AsMA)"
@@ -18,9 +18,7 @@ partners:
 - name: "Blue Abyss Ltd"
   logo_path: "images/partners/BA_logo_1920x869.jpg"
   ref_url: "https://www.blueabyss.uk/"
----
-
-
+--- 
 
 <!-- under_construction parameter set to 'true' in the _config.yaml -->
 {% if site.under_construction %}
@@ -101,8 +99,9 @@ partners:
         <div class="partner-logo-container">
           <img src="{{ site.baseurl }}/{{ partner.logo_path }}" 
                alt="{{ partner.name }} logo" 
-               class="partner-logo-img">
-          <p>{{ partner.name }}</p>
+               class="partner-logo-img"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <div class="partner-fallback" style="display:none;">{{ partner.name }}</div>
         </div>
       </a>
     </div>
@@ -405,7 +404,7 @@ partners:
 }
 
 /* Partner descriptions */
-.partner-description {
+/*.partner-description {
   font-size: 0.9rem;
   color: #b0c4de;
   margin-top: 0.5rem;
@@ -469,6 +468,112 @@ partners:
 
 .partner-logo-link:hover .partner-logo-img {
   transform: scale(1.05);
+}*/
+
+.partners-section {
+  margin: 3rem 0;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+.partners-section h2 {
+  color: #4a9eff;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.partner-item {
+  transition: all 0.3s ease;
+}
+
+.partner-logo-link {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
+.partner-logo-container {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  padding: 1.5rem;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(74, 158, 255, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.partner-logo-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(74, 158, 255, 0.3);
+  border-color: rgba(74, 158, 255, 0.5);
+  background: rgba(255, 255, 255, 1);
+}
+
+.partner-logo-img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+.partner-logo-link:hover .partner-logo-img {
+  transform: scale(1.05);
+}
+
+.partner-fallback {
+  color: #4a9eff;
+  font-weight: 600;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Debug mode - temporarily add this to see if containers are rendering */
+.partner-logo-container {
+  border: 2px dashed #ff0000 !important; /* Remove this after testing */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .partners-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .partner-logo-container {
+    height: 120px;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .partners-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .partner-logo-container {
+    height: 100px;
+    padding: 0.8rem;
+  }
 }
 
 /* Responsive adjustments */
