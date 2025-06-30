@@ -97,7 +97,7 @@ partners:
     <div class="partner-item">
       <a href="{{ partner.ref_url }}" target="_blank" class="partner-logo-link">
         <div class="partner-logo-container">
-          <img src="{{ site.baseurl }}/{{ partner.logo_path }}" 
+          <img src="{{ partner.logo_path }}" 
                alt="{{ partner.name }} logo" 
                class="partner-logo-img"
                onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
