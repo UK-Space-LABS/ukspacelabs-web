@@ -6,17 +6,14 @@ logo: ![UK-Space-LABS logo](images/Space_Logo_col_dEC_14.jpg)
 subtitle: Welcome - The UK Space Life and Biomedical Sciences Association
 
 partners:
-  - name: "Test Partner"
-    logo_path: "images/Space_Logo_col_dEC_14.jpg"
-    ref_url: "https://example.com"
   - name: "UK Space Agency (UKSA)"
     logo_path: "./images/partners/uk-space-agency-logo_500x500.png"
     ref_url: "https://www.gov.uk/government/organisations/uk-space-agency"
   - name: "Royal Aeronautical Society (RAeS)"  
-    logo_path: "//ukspacelabs-web/images/partners/royal-aeronautical-society-logo-300x300.jpg"
+    logo_path: "/ukspacelabs-web/images/partners/royal-aeronautical-society-logo-300x300.jpg"
     ref_url: "https://www.aerosociety.com/"
   - name: "Aerospace Medical Association (AsMA)"
-    logo_path: "images/partners/aerospace_medical_association_logo_612x612.jpg"
+    logo_path: "/images/partners/aerospace_medical_association_logo_612x612.jpg"
     ref_url: "https://www.asma.org/"
   - name: "Blue Abyss Ltd"
     logo_path: "images/partners/BA_logo_1920x869.jpg"
