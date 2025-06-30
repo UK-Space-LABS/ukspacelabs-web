@@ -76,7 +76,7 @@ partners:
 </section>
 -->
 
-<section class="partners-section">
+<!-- <section class="partners-section">
   <h2>Partners, Collaborators and Affiliated Organisations</h2>
   <div class="partners-grid">
     {% for partner in page.partners %}
@@ -84,6 +84,25 @@ partners:
       <a href="{{ partner.ref_url }}" target="_blank" class="partner-logo-link">
         <div class="partner-logo-container">
           <img src="{{ partner.logo_path | relative_url }}" alt="{{ partner.name }} logo" class="partner-logo-img">
+        </div>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+-->
+
+<section class="partners-section">
+  <h2>Partners, Collaborators and Affiliated Organisations</h2>
+  <div class="partners-grid">
+    {% for partner in page.partners %}
+    <div class="partner-item">
+      <a href="{{ partner.ref_url }}" target="_blank" class="partner-logo-link">
+        <div class="partner-logo-container">
+          <img src="{{ site.baseurl }}/{{ partner.logo_path }}" 
+               alt="{{ partner.name }} logo" 
+               class="partner-logo-img">
+          <p>{{ partner.name }}</p>
         </div>
       </a>
     </div>
