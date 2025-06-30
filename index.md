@@ -16,7 +16,7 @@ partners:
     logo_path: "/images/partners/aerospace_medical_association_logo_612x612.jpg"
     ref_url: "https://www.asma.org/"
   - name: "Blue Abyss Ltd"
-    logo_path: "images/partners/BA_logo_1920x869.jpg"
+    logo_path: images/partners/BA_logo_1920x869.jpg
     ref_url: "https://www.blueabyss.uk/"
 ---
 
