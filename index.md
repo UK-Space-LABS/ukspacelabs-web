@@ -6,6 +6,9 @@ logo: ![UK-Space-LABS logo](images/Space_Logo_col_dEC_14.jpg)
 subtitle: Welcome - The UK Space Life and Biomedical Sciences Association
 
 partners:
+  - name: "Test Partner"
+    logo_path: "images/Space_Logo_col_dEC_14.jpg"
+    ref_url: "https://example.com"
   - name: "UK Space Agency (UKSA)"
     logo_path: "./images/partners/uk-space-agency-logo_500x500.png"
     ref_url: "https://www.gov.uk/government/organisations/uk-space-agency"
