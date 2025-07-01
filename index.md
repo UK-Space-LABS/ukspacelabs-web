@@ -117,7 +117,7 @@ partners:
     <div class="partner-item">
       <a href="https://www.gov.uk/government/organisations/uk-space-agency" target="_blank">
         <div class="partner-logo-container">
-          <img src="/ukspacelabs-web/images/partners/uk-space-agency-logo_500x500.png" 
+          <img src="/ukspacelabs-web/images/partners/United_Kingdom_Space_Agency_UK_Space_Agency_logo.jpg" 
                alt="UK Space Agency" 
                class="partner-logo-img">
         </div>
