@@ -519,6 +519,7 @@ partners:
   transform: scale(1.05);
 }*/
 
+/*
 .partners-section {
   margin: 3rem 0;
   text-align: center;
@@ -594,12 +595,117 @@ partners:
   text-align: center;
   padding: 1rem;
 }
-
+*/
 /* Debug mode - temporarily add this to see if containers are rendering */
-.partner-logo-container {
+/*.partner-logo-container {
   border: 2px dashed #ff0000 !important; /* Remove this after testing */
+/* } 
+  */
+/* Enhanced Partners Section - Final Version */
+.partners-section {
+  margin: 3rem 0;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 2rem;
+  border-radius: 15px;
 }
 
+.partners-section h2 {
+  color: #4a9eff;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.partner-item {
+  transition: all 0.3s ease;
+}
+
+.partner-logo-link {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
+.partner-logo-container {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  padding: 1rem; /* Reduced padding so logos fill more space */
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(74, 158, 255, 0.2); /* Clean border, no debug stripes */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.partner-logo-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(74, 158, 255, 0.3);
+  border-color: rgba(74, 158, 255, 0.5);
+  background: rgba(255, 255, 255, 1);
+}
+
+.partner-logo-img {
+  max-width: 100%;
+  max-height: 130px; /* Slightly larger to fill more of the container */
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transition: all 0.3s ease;
+  border-radius: 8px; /* Slight rounding on the images themselves */
+}
+
+.partner-logo-link:hover .partner-logo-img {
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .partners-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .partner-logo-container {
+    min-height: 120px;
+    padding: 0.8rem;
+  }
+  
+  .partner-logo-img {
+    max-height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .partners-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .partner-logo-container {
+    min-height: 100px;
+    padding: 0.6rem;
+  }
+  
+  .partner-logo-img {
+    max-height: 80px;
+  }
+}
+
+  
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .partners-grid {
