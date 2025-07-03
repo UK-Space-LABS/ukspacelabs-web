@@ -55,11 +55,16 @@ core_members:
 • Business development, business case and value proposition development for new digital and physical techology products.
 • Concept development of integrated servicing processes and infrastructure for orbital microgravity missions in the biosciences."
     image: "images/team/CharlieY_LABS_profile.jpg"
-  - name: "(Replace)"
-    title: "Operations Manager"
-    role: "Organizational Development"
-    bio: "Oversees day-to-day operations, strategic planning, and organizational development for sustainable growth."
-    image: "images/team/UK_Space_LABS_Team_profile_placeholder.png"
+  - name: "Deepa Raju"
+    title: "Medical Doctor and Research Fellow, BMBS, MRCP (London), PgDip (Clinical Toxicology)"
+    role: "General Executive"
+    bio: "Deepasree Bangaru-Raju is an Acute Medicine Physician at University Hospital Southampton and Clinical Research Fellow with the Machine Learning Team at University of San Diego working on predictive models for patients with heart failure. In addition to clinical responsibilities, she is a member of the Austrian Space Forum (OeWF) and is part of the Biomedical Engineering leadership team. She has completed various space analogue missions, participating as a MEDO for the AMADEE 20 mission and an analogue astronaut (AA). She is also the medical leas for the upcoming World’s Biggest Analog mission. She is a fellow of the Royal Geographic Society, completed the European Space Agency Physician Training and was a member of the European Space Agency (ESA) systemic review team. Her clinical and academic pursuits reflect her aspiration to find solutions in delivering healthcare in microgravity environments for deep space exploration."
+    image: "images/team/DeepaBR_LABS_profile.png"
+  - name: "Robert Nagy"
+    title: "Applications Consultant & Developer, BSc, MSc, PhD (expected)"
+    role: "Website Development Manager"
+    bio: "Placeholder"
+    image: "images/team/RobertN_LABS_profile.jpeg"
 
 external_contacts:
   - name: "(Replace)"
