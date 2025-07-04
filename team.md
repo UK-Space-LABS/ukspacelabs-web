@@ -103,20 +103,6 @@ external_contacts:
     role: "(Replace)"
     bio: "(Replace)"
     image: "images/team/UK_Space_LABS_Team_profile_placeholder.png"
-
-executive_committee:
-  - name: "(Replace)"
-    role: "Chair"
-  - name: "(Replace)"
-    role: "Vice Chair"
-  - name: "(Replace)"
-    role: "Secretary"
-  - name: "(Replace)"
-    role: "Treasurer"
-  - name: "(Replace)"
-    role: "International Relations"
-  - name: "(Replace)"
-    role: "Technical Affairs"
 ---
 
 <section class="team-intro">
@@ -165,7 +151,7 @@ executive_committee:
   </div>
 </section>
 
-<section class="executive-committee-section">
+<!--<section class="executive-committee-section">
   <h2>Executive Committee</h2>
   <div class="executive-grid">
     {% for member in page.executive_committee %}
@@ -175,7 +161,7 @@ executive_committee:
     </div>
     {% endfor %}
   </div>
-</section>
+</section>-->
 
 <section class="team-message">
   <div class="message-container">
