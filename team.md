@@ -170,6 +170,7 @@ external_contacts:
 </section>
 
 <style>
+
 .team-intro {
   text-align: center;
   margin-bottom: 3rem;
@@ -215,11 +216,13 @@ external_contacts:
   transform: translateY(-5px);
   box-shadow: 0 15px 30px rgba(74, 158, 255, 0.2);
 }
-
+  
+/*
 .external-contact {
   border-left: 4px solid #00d4ff;
 }
-
+*/
+  
 .member-image {
   margin-bottom: 1.5rem;
 }
@@ -320,8 +323,8 @@ external_contacts:
 .team-message-img {
   max-width: 100%;
   height: auto;
-  border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  /*box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);*/
 }
 
 /* Responsive adjustments */
