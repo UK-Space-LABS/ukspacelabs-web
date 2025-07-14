@@ -32,7 +32,7 @@ core_members:
   - name: "Dr Julia Attias"
     title: "Researcher Development Manager/Human and Aerospace Physiologist, BSc, MSc, PhD"
     role: "Communications Executive"
-    bio: "My fundamental knowledge base lay in understanding how the removal/addition of gravitational loading affects cardiorespiratory and musculoskeletal systems as well as human movement. My research career spanned extensive investigation and experience in understanding of the efficacy of artificial gravity countermeasures - including wearable elastic garments and human centrifuges – on cardiorespiratory, neuromuscular and movement biomechanics, under both normal and microgravity paradigms. I have been, and enjoy being, involved in numerous outreach and engagement endeavours, including guest lectures, TV, Radio, interviews, blogs and competitions."
+    bio: "Julia's fundamental knowledge base lay in understanding how the removal/addition of gravitational loading affects cardiorespiratory and musculoskeletal systems as well as human movement. Her research career spanned extensive investigation and experience in understanding of the efficacy of artificial gravity countermeasures - including wearable elastic garments and human centrifuges – on cardiorespiratory, neuromuscular and movement biomechanics, under both normal and microgravity paradigms. She has worked on large-scale international collaborative projects with the UK Space Agency, the European Space Agency and NASA. She has been, and enjoys being, involved in numerous academic and outreach endeavours, including through guest lectures, TV, Radio, interviews, blogs and competitions."
     image: "images/team/JuliaA_LABS_profile.png"
   - name: "Paul Muckelt"
     title: "(Replace)"
