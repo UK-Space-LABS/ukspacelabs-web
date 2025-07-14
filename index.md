@@ -248,6 +248,15 @@ partners:
 
 {% endif %}
 
+<section class="schrodinger-quote">
+  <div class="quote-container">
+    <img src="{{ 'images/E_Schrodinger_What_is_Life.jpg' | relative_url }}" 
+         alt="Erwin Schrodinger quote about the essence of life in the universe" 
+         class="schrodinger-quote-img">
+  </div>
+</section>
+
+
 <style>
 /* Research Grid */
 .research-grid {
@@ -672,6 +681,28 @@ partners:
   transform: scale(1.05);
 }
 
+.schrodinger-quote {
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.quote-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.schrodinger-quote-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .partners-grid {
@@ -686,6 +717,10 @@ partners:
   
   .partner-logo-img {
     max-height: 100px;
+  }
+
+  .quote-container {
+    padding: 1rem;
   }
 }
 
