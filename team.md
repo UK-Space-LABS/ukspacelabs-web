@@ -4,11 +4,11 @@ title: Meet the Team
 subtitle: The People Behind UK Space LABS
 
 core_members:
-  - name: "Simon Evetts"
-    title: "R&D Director and Human Spaceflight Specialist, PhD FRAeS"
-    role: "Chair"
-    bio: "(Replace)"
-    image: "images/team/UK_Space_LABS_Team_profile_placeholder.png"
+  - name: "Dr Simon N Evetts"
+    title: "R&D Director, Blue Abyss, BA(Hons), PG Cert, MSc, PhD"
+    role: "Chairman"
+    bio: "Until recently Simon Evetts worked for Wyle (now KBR) leading the Medical Projects & Technology Unit at the European Astronaut Centre (EAC), Cologne, supporting the health of European astronauts. Since leaving EAC Simon has taken on a leading role in the development of the Blue Abyss enterprise, which will establish extreme environment research and training facilities and services, including those required to prepare people for Space. Simon has been passionate in the development of UK human spaceflight community over the last 25 years, co-founding the UK Space Life & Biomedical Sciences and UK Space Environments Associations as a result. He is a Visiting Senior Lecturer at Kings College London, a Visiting Professor at Northumbria University, and a Fellow of the Royal Aeronautical Society."
+    image: "images/team/SimonNE_LABS_profile.png"
   - name: "Katherine Baxter"
     title: "Research Associate, PhD"
     role: "Co-ordinator"
