@@ -45,15 +45,9 @@ core_members:
     bio: "Luke is an applied exercise physiologist whose primary research interest is optimisation of human health, performance and rehabilitation in aerospace, clinical healthcare and elite sport contexts. He is the lead of the Aerosapce Medicine & Rehabilitation Laboratory Research Group at Northumbria University, a leading institution is human spaceflight research. Luke collabroates with key stakeholders including: NASA Johsnon Space Centre, European Space Agency, Canadian Space Agency, SpaceX, Axiom Space and the Ministry of Defence. He speciliases in optimisation of exercise countmeasures for spaceflight, and is leading the global development of blood flow restriction exercise in space, which saw a historic first-ever on-orbit exercise experiment with SpaceX's Fram2 mission. Luke is also the early career theme lead for the Human, Environmental and Exercise Physiology Theme at the UK Physiological Society."
     image: "images/team/LukeH_LABS_profile.png"
   - name: "Charlie Young"
-    title: "Managing Director (Design) Plastron UK Ltd & CEO Near Zero by Design Ltd"
+    title: "Managing Director (Design) Plastron UK Ltd, CEO Near Zero by Design Ltd"
     role: "General Executive"
-    bio: "A skilled business & industrial innovator and product design specialist in healthTech and space engineering, including 20 years’ experience in frontline upstream unmanned space engineering, digital design & delivery and business transformation in both healthcare and space:
-• Design & development of state-of-the-art spacecraft processing environments and cleanrooms.
-• Design of advanced, mobile laboratories for pre-flight processing and post-flight repatriation of ISAM hardware.
-• Development of propulsion, launch operations and space systems engineering training programmes
-• Multi-disciplinary design of data-driven software platforms for LCA analysis and engineering risk management.
-• Business development, business case and value proposition development for new digital and physical techology products.
-• Concept development of integrated servicing processes and infrastructure for orbital microgravity missions in the biosciences."
+    bio: "Charlie Young has a career embedded in both the space industry and in healthcare and healthTech. In the health sector, he was involved helping DoH develop their digital strategies as well as developing the first online symptom assessment service for NHS Direct. His experience in the space sector includes spacecraft launch campaigns, launch operations and more recently in system transformation in support of UKLaunch, Microgravity Life Sciences and Carbon Impact reporting. He is currently working on projects to introduce new UK and European microgravity research capabilities as the International Space Station reaches the end of it's operational life in the next five years."
     image: "images/team/CharlieY_LABS_profile.jpg"
   - name: "Dr Deepasree Bangaru-Raju"
     title: "Medical Doctor and Research Fellow, BMBS, MRCP (London), PgDip (Clinical Toxicology)"
