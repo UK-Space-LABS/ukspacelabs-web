@@ -120,6 +120,290 @@ A scientist by background, I undertook a PhD for the European Space Agency at Ki
 <section class="team-intro">
   <h2>Meet Our Team</h2>
   <p class="team-description">
+    UK Space LABS brings together a diverse team of seasoned experts, early career professionals and students from across the space life sciences communityÂ and aligned sectors. Our team combines decades of experience in space medicine, biomedical research, education, and industry collaboration to advance the field of space biomedicine in the UK and internationally.
+  </p>
+</section>
+<section class="core-members-section">
+  <h2>Executive Committee Members</h2>
+  <div class="team-grid">
+    {% for member in page.core_members %}
+    <div class="team-member-card{% if member.linkedin and member.linkedin != '' %} clickable{% endif %}"{% if member.linkedin and member.linkedin != '' %} onclick="window.open('{{ member.linkedin }}', '_blank')"{% endif %}>
+      <div class="member-image">
+        <img src="{{ member.image | relative_url }}" alt="{{ member.name }}" class="profile-img">
+      </div>
+      <div class="member-info">
+        <h3 class="member-name">{{ member.name }}</h3>
+        <h4 class="member-title">{{ member.title }}</h4>
+        <p class="member-role">{{ member.role }}</p>
+        <p class="member-bio">{{ member.bio }}</p>
+        {% if member.linkedin and member.linkedin != '' %}
+        <div class="linkedin-icon">
+          <i class="fab fa-linkedin" aria-label="LinkedIn Profile"></i>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+<section class="external-contacts-section">
+  <h2>External Agency Point of Contacts</h2>
+  <div class="team-grid">
+    {% for contact in page.external_contacts %}
+    <div class="team-member-card external-contact{% if contact.linkedin and contact.linkedin != '' %} clickable{% endif %}"{% if contact.linkedin and contact.linkedin != '' %} onclick="window.open('{{ contact.linkedin }}', '_blank')"{% endif %}>
+      <div class="member-image">
+        <img src="{{ contact.image | relative_url }}" alt="{{ contact.name }}" class="profile-img">
+      </div>
+      <div class="member-info">
+        <h3 class="member-name">{{ contact.name }}</h3>
+        <h4 class="member-title">{{ contact.title }}</h4>
+        <p class="member-organization">{{ contact.organization }}</p>
+        <p class="member-role">{{ contact.role }}</p>
+        <p class="member-bio">{{ contact.bio }}</p>
+        {% if contact.linkedin and contact.linkedin != '' %}
+        <div class="linkedin-icon">
+          <i class="fab fa-linkedin" aria-label="LinkedIn Profile"></i>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+<!--<section class="executive-committee-section">
+  <h2>Executive Committee</h2>
+  <div class="executive-grid">
+    {% for member in page.executive_committee %}
+    <div class="executive-member">
+      <h4 class="exec-name">{{ member.name }}</h4>
+      <p class="exec-role">{{ member.role }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>-->
+<section class="team-message">
+  <div class="message-container">
+    <img src="{{ 'images/we_are_here_for_now.png' | relative_url }}" alt="Here we are, at least for now" class="team-message-img">
+  </div>
+</section>
+<style>
+
+.team-intro {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.team-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #e6f3ff;
+  margin: 1.5rem 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.core-members-section h2,
+.external-contacts-section h2,
+..executive-committee-section h2 {
+  color: #def3fb !important; /* Brighter */
+  text-shadow: 0 0 10px rgba(74, 158, 255, 0.5);
+  font-size: 2rem;
+  margin: 4rem 0;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.team-member-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+  position: relative;
+}
+
+.team-member-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(74, 158, 255, 0.2);
+}
+
+.team-member-card.clickable {
+  cursor: pointer;
+}
+
+.team-member-card.clickable:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(74, 158, 255, 0.5);
+}
+
+.team-member-card.clickable:hover .linkedin-icon {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.linkedin-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #0077b5;
+  font-size: 1.5rem;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.linkedin-icon:hover {
+  color: #005885;
+}
+  
+/*
+.external-contact {
+  border-left: 4px solid #00d4ff;
+}
+*/
+  
+.member-image {
+  margin-bottom: 1.5rem;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(74, 158, 255, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.member-name {
+  color: #4a9eff;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.member-title {
+  color: #87ceeb;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.member-organization {
+  color: #00d4ff;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.member-role {
+  color: #b0c4de;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  padding: 0.3rem 0.8rem;
+  background: rgba(74, 158, 255, 0.2);
+  border-radius: 12px;
+  display: inline-block;
+}
+
+.member-bio {
+  color: #e6f3ff;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.executive-committee-section {
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.executive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.executive-member {
+  background: rgba(74, 158, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid rgba(74, 158, 255, 0.3);
+}
+
+.exec-name {
+  color: #4a9eff;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.exec-role {
+  color: #87ceeb;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.team-message {
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.message-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.team-message-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  /*box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);*/
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .team-member-card {
+    padding: 1.5rem;
+  }
+  
+  .executive-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .executive-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .message-container {
+    padding: 1rem;
+  }
+}
+
+</style>
+
+<!-- <section class="team-intro">
+  <h2>Meet Our Team</h2>
+  <p class="team-description">
     UK Space LABS brings together a diverse team of seasoned experts, early career professionals and students from across the space life sciences community and aligned sectors. Our team combines decades of experience in space medicine, biomedical research, education, and industry collaboration to advance the field of space biomedicine in the UK and internationally.
   </p>
 </section>
