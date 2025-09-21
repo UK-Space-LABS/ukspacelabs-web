@@ -68,7 +68,7 @@ core_members:
     title: "ISU MSS25_26, BSc in Molecular Bionics Engineering, MSc in Data Science and Business, PhD in Molecular and Clinical Medicine"
     role: "Website Development & Contents Management"
     bio: "Robert is an avid space enthusiast whose multidisciplinary expertise encompasses Biomedical Engineering, Information Technology, Business, Clinical Data Science, and Artificial Intelligence. This diverse foundation is further enriched by over eight years of academic research experience in Neuroscience, Medical Imaging, Biophysics, and Health Data. His recent role was in high-performance computing, contributing to projects in satellite imagery, weather modelling, and Safe Haven Health Data services, whilst obtained a PhD in Clinical Data Science with a focus on Health Technology Appraisal. Robert aspires to advance his career at the nexus of 'Space, Life, and Intelligent Machines', striving to bridge disparate fields of knowledge and uphold the highest standards of quality and ethics. Following the completion of his doctorate, he has joined the 2025 cohort of the International Space University’s Space Studies Master's Programme with a dedication to specialising in Space Sciences and Exploration."
-    linkedin: ""
+    linkedin: "https://www.linkedin.com/in/robn01/"
     image: "images/team/RobertN_LABS_profile.jpeg"
 
 external_contacts:
@@ -99,7 +99,7 @@ external_contacts:
     role: "Advisor"
     bio: "I have the pleasure of working with stakeholders across the research and innovation ecosystem, in developing High-Tech, innovation clusters. This started several years ago with setting up the North West of England’s Health and Life sciences Cluster and has since grown to support multiple other cluster developments, in sectors such as Digital, Biotech, Defence, Materials, as well as chairing national cluster boards in the space sector. 
 A scientist by background, I undertook a PhD for the European Space Agency at King’s College London, on a project designed to support the health of astronauts. As such I am passionate about cross sector opportunities, particularly between the life sciences and space sectors. I have cooridnated several national reports including the position paper Why Space?the oppounity for Life Sciences and Innovation."
-    linkedin: ""
+    linkedin: "https://www.linkedin.com/in/philip-carvil/"
     image: "images/team/PhilC_LABS_profile.png"
   - name: "Dr Samantha W. Jones"
     title: "Research Project Manager, University of Liverpool; Consultant Project Manager, BioOrbit Ltd; Space Exploration Advisory Committee, UKSA; BSc - Biological Sciences (Hons), MRes - Biomedical Science and Translational Medicine (Drug Safety), PhD - Molecular and Clinical Pharmacology"
@@ -120,7 +120,7 @@ A scientist by background, I undertook a PhD for the European Space Agency at Ki
 <section class="team-intro">
   <h2>Meet Our Team</h2>
   <p class="team-description">
-    UK Space LABS brings together a diverse team of seasoned experts, early career professionals and students from across the space life sciences communityÂ and aligned sectors. Our team combines decades of experience in space medicine, biomedical research, education, and industry collaboration to advance the field of space biomedicine in the UK and internationally.
+    UK Space LABS brings together a diverse team of seasoned experts, early career professionals and students from across the space life sciences community and aligned sectors. Our team combines decades of experience in space medicine, biomedical research, education, and industry collaboration to advance the field of space biomedicine in the UK and internationally.
   </p>
 </section>
 <section class="core-members-section">
@@ -457,13 +457,13 @@ A scientist by background, I undertook a PhD for the European Space Agency at Ki
     </div>
     {% endfor %}
   </div>
-</section>-->
+</section>
 
 <section class="team-message">
   <div class="message-container">
     <img src="{{ 'images/we_are_here_for_now.png' | relative_url }}" alt="Here we are, at least for now" class="team-message-img">
   </div>
-</section>
+</section>-->
 
 <style>
 
