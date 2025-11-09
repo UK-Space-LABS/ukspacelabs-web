@@ -85,6 +85,9 @@ plugins:
 # allow page redirection
 plugins:
   # - jekyll-redirect-from
+
+# Language
+lang: en-GB
   
   # Where things are
 
@@ -96,4 +99,5 @@ plugins:
 # Turn on built-in syntax highlighting.
 
 highlighter: rouge
+
 
