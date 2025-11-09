@@ -5,6 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
     <meta name="description" content="{{ page.description | default: site.description }}">
+
+    <!-- SEO Meta Tags -->
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description | strip_html | truncate: 160 }}">
+    <meta name="keywords" content="space life sciences, space biomedicine, UK space research, human spaceflight, space biology, aerospace medicine, {{ page.keywords | default: '' }}">
+    <meta name="author" content="{{ site.author | default: 'UK Space LABS' }}">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
+    <meta name="twitter:description" content="{{ page.description | default: site.description | strip_html | truncate: 160 }}">
+    <meta name="twitter:image" content="{{ '/images/UK_Space_LABS_website_header_image.png' | absolute_url }}">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "{{ site.title }}",
+      "url": "{{ site.url }}{{ site.baseurl }}",
+      "logo": "{{ '/images/Space_Logo_col_dEC_14.jpg' | absolute_url }}",
+      "description": "{{ site.description | strip_html }}",
+      "sameAs": [
+        {% if site.social-linkedin %}"https://www.linkedin.com/groups/{{ site.social-linkedin }}/",{% endif %}
+        {% if site.social-github %}"https://github.com/{{ site.social-github }}"{% endif %}
+      ]
+    }
+    </script>
     
     <!-- Favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="{{ 'assets/images/favicon/Space_LABS_black2_32x32.ico' | relative_url }}">
