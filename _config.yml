@@ -75,6 +75,8 @@ show_downloads: false
 google_analytics:
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
   - jemoji
 # exclude:
 #  - Gemfile
@@ -94,3 +96,4 @@ plugins:
 # Turn on built-in syntax highlighting.
 
 highlighter: rouge
+
