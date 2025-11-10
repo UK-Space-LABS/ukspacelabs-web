@@ -83,7 +83,7 @@ plugins:
 #  - Gemfile.lock
 
 # allow page redirection
-plugins:
+# plugins:
   # - jekyll-redirect-from
 
 # Language
@@ -99,5 +99,6 @@ lang: en-GB
 # Turn on built-in syntax highlighting.
 
 highlighter: rouge
+
 
 
