@@ -2,6 +2,8 @@
 layout: default
 theme: Home
 title: "UK Space LABS"
+description: "UK Space Life and Biomedical Sciences Association - Empowering research, education and innovation in space life sciences and human spaceflight"
+keywords: "space medicine, aerospace medicine, space biology, human spaceflight, UK space research"
 logo: ![UK-Space-LABS logo](images/Space_Logo_col_dEC_14.jpg)
 subtitle: Welcome - The UK Space Life and Biomedical Sciences Association
 
