@@ -127,22 +127,24 @@ A scientist by background, I undertook a PhD for the European Space Agency at Ki
   <h2>Executive Committee Members</h2>
   <div class="team-grid">
     {% for member in page.core_members %}
-    <div class="team-member-card{% if member.linkedin and member.linkedin != '' %} clickable{% endif %}"{% if member.linkedin and member.linkedin != '' %} onclick="window.open('{{ member.linkedin }}', '_blank')"{% endif %}>
-      <div class="member-image">
-        <img src="{{ member.image | relative_url }}" alt="{{ member.name }}" class="profile-img">
-      </div>
-      <div class="member-info">
-        <h3 class="member-name">{{ member.name }}</h3>
-        <h4 class="member-title">{{ member.title }}</h4>
-        <p class="member-role">{{ member.role }}</p>
-        <p class="member-bio">{{ member.bio }}</p>
-        {% if member.linkedin and member.linkedin != '' %}
-        <div class="linkedin-icon">
-          <i class="fab fa-linkedin" aria-label="LinkedIn Profile"></i>
+    {% unless member.bio contains "(Replace)" or member.bio == "" %}
+      <div class="team-member-card{% if member.linkedin and member.linkedin != '' %} clickable{% endif %}"{% if member.linkedin and member.linkedin != '' %} onclick="window.open('{{ member.linkedin }}', '_blank')"{% endif %}>
+        <div class="member-image">
+          <img src="{{ member.image | relative_url }}" alt="{{ member.name }}" class="profile-img">
         </div>
-        {% endif %}
+        <div class="member-info">
+          <h3 class="member-name">{{ member.name }}</h3>
+          <h4 class="member-title">{{ member.title }}</h4>
+          <p class="member-role">{{ member.role }}</p>
+          <p class="member-bio">{{ member.bio }}</p>
+          {% if member.linkedin and member.linkedin != '' %}
+          <div class="linkedin-icon">
+            <i class="fab fa-linkedin" aria-label="LinkedIn Profile"></i>
+          </div>
+          {% endif %}
+        </div>
       </div>
-    </div>
+    {% endunless %}
     {% endfor %}
   </div>
 </section>
