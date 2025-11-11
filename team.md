@@ -127,24 +127,24 @@ A scientist by background, I undertook a PhD for the European Space Agency at Ki
   <h2>Executive Committee Members</h2>
   <div class="team-grid">
     {% for member in page.core_members %}
-    {% unless member.bio contains "(Replace)" or member.bio == "" %}
-      <div class="team-member-card{% if member.linkedin and member.linkedin != '' %} clickable{% endif %}"{% if member.linkedin and member.linkedin != '' %} onclick="window.open('{{ member.linkedin }}', '_blank')"{% endif %}>
-        <div class="member-image">
-          <img src="{{ member.image | relative_url }}" alt="{{ member.name }}" class="profile-img">
-        </div>
-        <div class="member-info">
-          <h3 class="member-name">{{ member.name }}</h3>
-          <h4 class="member-title">{{ member.title }}</h4>
-          <p class="member-role">{{ member.role }}</p>
-          <p class="member-bio">{{ member.bio }}</p>
-          {% if member.linkedin and member.linkedin != '' %}
-          <div class="linkedin-icon">
-            <i class="fab fa-linkedin" aria-label="LinkedIn Profile"></i>
+      {% unless member.bio contains "(Replace)" or member.bio == "" %}
+        <div class="team-member-card{% if member.linkedin and member.linkedin != '' %} clickable{% endif %}"{% if member.linkedin and member.linkedin != '' %} onclick="window.open('{{ member.linkedin }}', '_blank')"{% endif %}>
+          <div class="member-image">
+            <img src="{{ member.image | relative_url }}" alt="{{ member.name }}" class="profile-img">
           </div>
-          {% endif %}
+          <div class="member-info">
+            <h3 class="member-name">{{ member.name }}</h3>
+            <h4 class="member-title">{{ member.title }}</h4>
+            <p class="member-role">{{ member.role }}</p>
+            <p class="member-bio">{{ member.bio }}</p>
+            {% if member.linkedin and member.linkedin != '' %}
+            <div class="linkedin-icon">
+              <i class="fab fa-linkedin" aria-label="LinkedIn Profile"></i>
+            </div>
+            {% endif %}
+          </div>
         </div>
-      </div>
-    {% endunless %}
+      {% endunless %}
     {% endfor %}
   </div>
 </section>
@@ -152,23 +152,25 @@ A scientist by background, I undertook a PhD for the European Space Agency at Ki
   <h2>External Agency Point of Contacts</h2>
   <div class="team-grid">
     {% for contact in page.external_contacts %}
-    <div class="team-member-card external-contact{% if contact.linkedin and contact.linkedin != '' %} clickable{% endif %}"{% if contact.linkedin and contact.linkedin != '' %} onclick="window.open('{{ contact.linkedin }}', '_blank')"{% endif %}>
-      <div class="member-image">
-        <img src="{{ contact.image | relative_url }}" alt="{{ contact.name }}" class="profile-img">
-      </div>
-      <div class="member-info">
-        <h3 class="member-name">{{ contact.name }}</h3>
-        <h4 class="member-title">{{ contact.title }}</h4>
-        <p class="member-organization">{{ contact.organization }}</p>
-        <p class="member-role">{{ contact.role }}</p>
-        <p class="member-bio">{{ contact.bio }}</p>
-        {% if contact.linkedin and contact.linkedin != '' %}
-        <div class="linkedin-icon">
-          <i class="fab fa-linkedin" aria-label="LinkedIn Profile"></i>
+      {% unless contact.bio contains "(Replace)" or contact.bio == "" %}
+        <div class="team-member-card external-contact{% if contact.linkedin and contact.linkedin != '' %} clickable{% endif %}"{% if contact.linkedin and contact.linkedin != '' %} onclick="window.open('{{ contact.linkedin }}', '_blank')"{% endif %}>
+          <div class="member-image">
+            <img src="{{ contact.image | relative_url }}" alt="{{ contact.name }}" class="profile-img">
+          </div>
+          <div class="member-info">
+            <h3 class="member-name">{{ contact.name }}</h3>
+            <h4 class="member-title">{{ contact.title }}</h4>
+            <p class="member-organization">{{ contact.organization }}</p>
+            <p class="member-role">{{ contact.role }}</p>
+            <p class="member-bio">{{ contact.bio }}</p>
+            {% if contact.linkedin and contact.linkedin != '' %}
+            <div class="linkedin-icon">
+              <i class="fab fa-linkedin" aria-label="LinkedIn Profile"></i>
+            </div>
+            {% endif %}
+          </div>
         </div>
-        {% endif %}
-      </div>
-    </div>
+      {% endunless %}
     {% endfor %}
   </div>
 </section>
