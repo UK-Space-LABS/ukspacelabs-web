@@ -143,7 +143,7 @@ partners:
       </a>
     </div>
     
-    <div class="partner-item">
+    <!-- <div class="partner-item">
       <a href="https://www.blueabyss.uk/" target="_blank">
         <div class="partner-logo-container">
           <img src="/ukspacelabs-web/images/partners/BA_logo_1920x869.jpg" 
@@ -151,7 +151,7 @@ partners:
                class="partner-logo-img">
         </div>
       </a>
-    </div>
+    </div> -->
     
   </div>
 </section>
