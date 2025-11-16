@@ -17,9 +17,6 @@ partners:
   - name: "Aerospace Medical Association (AsMA)"
     logo_path: "https://uk-space-labs.github.io/ukspacelabs-web/images/partners/aerospace_medical_association_logo_612x612.jpg"
     ref_url: "https://www.asma.org/"
-  - name: "Blue Abyss Ltd"
-    logo_path: "https://uk-space-labs.github.io/ukspacelabs-webimages/partners/BA_logo_1920x869.jpg"
-    ref_url: "https://www.blueabyss.uk/"
 ---
 
 <!-- under_construction parameter set to 'true' in the _config.yaml -->
